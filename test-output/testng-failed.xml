@@ -7,13 +7,14 @@
   </listeners>
   <test thread-count="5" name="LoginTest(failed)">
     <classes>
-      <class name="tests.ClientSignUp">
+      <class name="tests.ClientLogIn">
         <methods>
+          <include name="TC_Positive_Verify_that_Client_ShouldAble_Changethe_CountryCode"/>
+          <include name="TC_Positive_Verify_that_Client_ShouldAble_ToResend_OTPThrough_PhoneNumber"/>
           <include name="teardown"/>
-          <include name="TC_Positive_Verify_that_Client_ShouldAble_ToSignUp_Through_Option1"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- tests.ClientSignUp -->
+      </class> <!-- tests.ClientLogIn -->
     </classes>
   </test> <!-- LoginTest(failed) -->
 </suite> <!-- Failed suite [N11 Test Suite] -->
