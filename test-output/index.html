@@ -24,23 +24,23 @@
   <body>
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
-      <button class="button" id="button">Switch Retro Theme</button> <!-- button -->
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
-          <img class="collapse-all-icon" src="collapseall.gif">
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" class="navigator-link" panel-name="suite-N11_Test_Suite">
-              <span class="suite-name border-passed">N11 Test Suite</span>
+            <a href="#" panel-name="suite-N11_Test_Suite" class="navigator-link">
+              <span class="suite-name border-failed">N11 Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,37 +50,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="test-xml-N11_Test_Suite">
+                  <a href="#" panel-name="test-xml-N11_Test_Suite" class="navigator-link ">
                     <span>C:\Users\khans\eclipse-workspace\Jungler - Automation\TestNG.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="testlist-N11_Test_Suite">
+                  <a href="#" panel-name="testlist-N11_Test_Suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="group-N11_Test_Suite">
+                  <a href="#" panel-name="group-N11_Test_Suite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="times-N11_Test_Suite">
+                  <a href="#" panel-name="times-N11_Test_Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="reporter-N11_Test_Suite">
+                  <a href="#" panel-name="reporter-N11_Test_Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="ignored-methods-N11_Test_Suite">
+                  <a href="#" panel-name="ignored-methods-N11_Test_Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" class="navigator-link " panel-name="chronological-N11_Test_Suite">
+                  <a href="#" panel-name="chronological-N11_Test_Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -93,7 +93,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">6 methods, 2 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-N11_Test_Suite" class="hide-methods failed suite-N11_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-N11_Test_Suite -->
+                      <a href="#" panel-name="suite-N11_Test_Suite" class="show-methods failed suite-N11_Test_Suite"> (show)</a> <!-- show-methods failed suite-N11_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-N11_Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-N11_Test_Suite" title="tests.ClientLogIn" class="method navigator-link" hash-for-method="TC_Positive_Verify_that_Client_ShouldAble_Changethe_CountryCode">TC_Positive_Verify_that_Client_ShouldAble_Changethe_CountryCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-N11_Test_Suite" title="tests.ClientLogIn" class="method navigator-link" hash-for-method="TC_Positive_Verify_that_Client_ShouldAble_ToResend_OTPThrough_PhoneNumber">TC_Positive_Verify_that_Client_ShouldAble_ToResend_OTPThrough_PhoneNumber</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-N11_Test_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,33 +122,23 @@
                     </span>
                     <div class="method-list-content passed suite-N11_Test_Suite">
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-N11_Test_Suite" title="tests.ClientLogIn" hash-for-method="TC_Positive_Verify_that_Client_ShouldAble_Changethe_CountryCode">TC_Positive_Verify_that_Client_ShouldAble_Changethe_CountryCode</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-N11_Test_Suite" title="tests.ClientLogIn" class="method navigator-link" hash-for-method="TC_Positive_Verify_that_Client_ShouldAble_ToLogin_Through_PhoneNumber">TC_Positive_Verify_that_Client_ShouldAble_ToLogin_Through_PhoneNumber</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-N11_Test_Suite" title="tests.ClientLogIn" hash-for-method="TC_Positive_Verify_that_Client_ShouldAble_ToLogin_Through_PhoneNumber">TC_Positive_Verify_that_Client_ShouldAble_ToLogin_Through_PhoneNumber</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-N11_Test_Suite" title="tests.ClientLogIn" class="method navigator-link" hash-for-method="TC_Positive_Verify_that_Client_ShouldAble_Toget_ErrorMessage_onUsing_InvalidNumber">TC_Positive_Verify_that_Client_ShouldAble_Toget_ErrorMessage_onUsing_InvalidNumber</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-N11_Test_Suite" title="tests.ClientLogIn" hash-for-method="TC_Positive_Verify_that_Client_ShouldAble_ToResend_OTPThrough_PhoneNumber">TC_Positive_Verify_that_Client_ShouldAble_ToResend_OTPThrough_PhoneNumber</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-N11_Test_Suite" title="tests.ClientLogIn" class="method navigator-link" hash-for-method="TC_Positive_Verify_that_Client_ShouldAble_cancel_LoginOnclick_CancelButton">TC_Positive_Verify_that_Client_ShouldAble_cancel_LoginOnclick_CancelButton</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-N11_Test_Suite" title="tests.ClientLogIn" hash-for-method="TC_Positive_Verify_that_Client_ShouldAble_Toget_ErrorMessage_onUsing_InvalidNumber">TC_Positive_Verify_that_Client_ShouldAble_Toget_ErrorMessage_onUsing_InvalidNumber</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-N11_Test_Suite" title="tests.ClientLogIn" hash-for-method="TC_Positive_Verify_that_Client_ShouldAble_cancel_LoginOnclick_CancelButton">TC_Positive_Verify_that_Client_ShouldAble_cancel_LoginOnclick_CancelButton</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-N11_Test_Suite" title="tests.ClientLogIn" hash-for-method="TC_Positive_Verify_that_Client_ShouldGet_ErrorMessage_inCaseof_Emptyfield">TC_Positive_Verify_that_Client_ShouldGet_ErrorMessage_inCaseof_Emptyfield</a> <!-- method navigator-link -->
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-N11_Test_Suite" title="tests.ClientLogIn" class="method navigator-link" hash-for-method="TC_Positive_Verify_that_Client_ShouldGet_ErrorMessage_inCaseof_Emptyfield">TC_Positive_Verify_that_Client_ShouldGet_ErrorMessage_inCaseof_Emptyfield</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-N11_Test_Suite -->
@@ -144,9 +153,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-N11_Test_Suite" class="panel N11_Test_Suite">
-          <div class="suite-N11_Test_Suite-class-passed">
+          <div class="suite-N11_Test_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">tests.ClientLogIn</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -155,17 +164,29 @@
                   <a name="TC_Positive_Verify_that_Client_ShouldAble_Changethe_CountryCode">
                   </a> <!-- TC_Positive_Verify_that_Client_ShouldAble_Changethe_CountryCode -->
                   <span class="method-name">TC_Positive_Verify_that_Client_ShouldAble_Changethe_CountryCode</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=96.0.4664.110)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-RQ3L8BF&apos;, ip: &apos;192.168.1.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.18 (b8887b3d1742a..., userDataDir: C:\Users\khans\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52690}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b6eb705c3abde3ef7959ae97efe2cebf
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at pages.BasePage.click(BasePage.java:19)
+	at pages.PageSignIn.changeflag(PageSignIn.java:88)
+	at tests.ClientLogIn.TC_Positive_Verify_that_Client_ShouldAble_Changethe_CountryCode(ClientLogIn.java:104)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
                   <em>
 (Verify that client should able to change the country code)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_Positive_Verify_that_Client_ShouldAble_ToLogin_Through_PhoneNumber">
-                  </a> <!-- TC_Positive_Verify_that_Client_ShouldAble_ToLogin_Through_PhoneNumber -->
-                  <span class="method-name">TC_Positive_Verify_that_Client_ShouldAble_ToLogin_Through_PhoneNumber</span>
-                  <em>
-(Verify that client should able to login through phone number)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -173,8 +194,50 @@
                   <a name="TC_Positive_Verify_that_Client_ShouldAble_ToResend_OTPThrough_PhoneNumber">
                   </a> <!-- TC_Positive_Verify_that_Client_ShouldAble_ToResend_OTPThrough_PhoneNumber -->
                   <span class="method-name">TC_Positive_Verify_that_Client_ShouldAble_ToResend_OTPThrough_PhoneNumber</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;root&quot;]/div[2]/div/section/div/div[2]/div/div/div/div/button&quot;}
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-RQ3L8BF&apos;, ip: &apos;192.168.1.11&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.18 (b8887b3d1742a..., userDataDir: C:\Users\khans\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52690}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b6eb705c3abde3ef7959ae97efe2cebf
+*** Element info: {Using=xpath, value=//*[@id=&quot;root&quot;]/div[2]/div/section/div/div[2]/div/div/div/div/button}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pages.BasePage.click(BasePage.java:19)
+	at pages.PageSignIn.clickonResend(PageSignIn.java:74)
+	at tests.ClientLogIn.TC_Positive_Verify_that_Client_ShouldAble_ToResend_OTPThrough_PhoneNumber(ClientLogIn.java:168)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
                   <em>
 (Verify that client should able to resend OTP through phone number)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-N11_Test_Suite-class-failed -->
+          <div class="suite-N11_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.ClientLogIn</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_Positive_Verify_that_Client_ShouldAble_ToLogin_Through_PhoneNumber">
+                  </a> <!-- TC_Positive_Verify_that_Client_ShouldAble_ToLogin_Through_PhoneNumber -->
+                  <span class="method-name">TC_Positive_Verify_that_Client_ShouldAble_ToLogin_Through_PhoneNumber</span>
+                  <em>
+(Verify that client should able to login through phone number)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -215,7 +278,7 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite configfailurepolicy=&quot;continue&quot; guice-stage=&quot;DEVELOPMENT&quot; name=&quot;N11 Test Suite&quot;&gt;
+&lt;suite configfailurepolicy=&quot;continue&quot; name=&quot;N11 Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;utils.Listeners.TestListener&quot;/&gt;
     &lt;listener class-name=&quot;utils.Listeners.AnnotationTransformer&quot;/&gt;
@@ -266,27 +329,27 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TC_Positive_Verify_that_Client_ShouldAble_ToResend_OTPThrough_PhoneNumber')
 data.setCell(0, 2, 'tests.ClientLogIn')
-data.setCell(0, 3, 88997);
+data.setCell(0, 3, 87148);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TC_Positive_Verify_that_Client_ShouldAble_cancel_LoginOnclick_CancelButton')
+data.setCell(1, 1, 'TC_Positive_Verify_that_Client_ShouldAble_ToLogin_Through_PhoneNumber')
 data.setCell(1, 2, 'tests.ClientLogIn')
-data.setCell(1, 3, 17678);
+data.setCell(1, 3, 15918);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TC_Positive_Verify_that_Client_ShouldAble_ToLogin_Through_PhoneNumber')
+data.setCell(2, 1, 'TC_Positive_Verify_that_Client_ShouldAble_cancel_LoginOnclick_CancelButton')
 data.setCell(2, 2, 'tests.ClientLogIn')
-data.setCell(2, 3, 15643);
+data.setCell(2, 3, 12384);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'TC_Positive_Verify_that_Client_ShouldGet_ErrorMessage_inCaseof_Emptyfield')
+data.setCell(3, 1, 'TC_Positive_Verify_that_Client_ShouldAble_Changethe_CountryCode')
 data.setCell(3, 2, 'tests.ClientLogIn')
-data.setCell(3, 3, 8333);
+data.setCell(3, 3, 11057);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'TC_Positive_Verify_that_Client_ShouldAble_Changethe_CountryCode')
+data.setCell(4, 1, 'TC_Positive_Verify_that_Client_ShouldAble_Toget_ErrorMessage_onUsing_InvalidNumber')
 data.setCell(4, 2, 'tests.ClientLogIn')
-data.setCell(4, 3, 7921);
+data.setCell(4, 3, 7815);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'TC_Positive_Verify_that_Client_ShouldAble_Toget_ErrorMessage_onUsing_InvalidNumber')
+data.setCell(5, 1, 'TC_Positive_Verify_that_Client_ShouldGet_ErrorMessage_inCaseof_Emptyfield')
 data.setCell(5, 2, 'tests.ClientLogIn')
-data.setCell(5, 3, 7737);
+data.setCell(5, 3, 5660);
 window.suiteTableData['N11_Test_Suite']= { tableData: data, tableDiv: 'times-div-N11_Test_Suite'}
 return data;
 }
@@ -324,31 +387,35 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">TC_Positive_Verify_that_Client_ShouldAble_ToLogin_Through_PhoneNumber</span>
-                <span class="method-start">7990 ms</span>
+                <span class="method-start">3817 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TC_Positive_Verify_that_Client_ShouldAble_Changethe_CountryCode</span>
+                <span class="method-start">19752 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_Positive_Verify_that_Client_ShouldAble_cancel_LoginOnclick_CancelButton</span>
-                <span class="method-start">23644 ms</span>
+                <span class="method-start">31153 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_Positive_Verify_that_Client_ShouldGet_ErrorMessage_inCaseof_Emptyfield</span>
-                <span class="method-start">41327 ms</span>
+                <span class="method-start">43540 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">TC_Positive_Verify_that_Client_ShouldAble_Changethe_CountryCode</span>
-                <span class="method-start">49663 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">TC_Positive_Verify_that_Client_ShouldAble_ToResend_OTPThrough_PhoneNumber</span>
-                <span class="method-start">57587 ms</span>
+                <span class="method-start">49202 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_Positive_Verify_that_Client_ShouldAble_Toget_ErrorMessage_onUsing_InvalidNumber</span>
-                <span class="method-start">146586 ms</span>
+                <span class="method-start">136675 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">154329 ms</span>
+                <span class="method-start">144499 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

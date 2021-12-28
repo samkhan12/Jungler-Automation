@@ -42,7 +42,7 @@ public class PageSignIn extends BasePage{
     String optmsg = "//*[@id=\"root\"]/div[2]/div/section/div/div[2]/div/div/div/div/div/div/div/div[3]/span";
     String errormsg1 = "//*[@id=\"phoneTab\"]/div/main/div/div/div/span";
     
-  
+
     //*********Page Methods*********
     
     public void clickonphone() throws InterruptedException {
