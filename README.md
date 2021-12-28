@@ -1,4 +1,4 @@
-# SkillGigs.React.Automation
+# Jungler.Automation
 * ExtentReports 2.41.2 
 * React Site Link: 
 
