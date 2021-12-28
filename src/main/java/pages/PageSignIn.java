@@ -32,7 +32,7 @@ public class PageSignIn extends BasePage{
     String numb = "//*[@id=\"phoneTab\"]/div/main/div/div/div/div/div/div/input";
     String savebtn = "//*[@id=\"root\"]/div[2]/section/div[2]/div[2]/div/div/div/div/div/div/div/div/div/button";
     String enterotp = "//*[@id=\"root\"]/div[2]/div/section/div/div[2]/div/div/div/div/div/div/div/div[1]/div[1]/input";
-    String profile = "avatar-name";
+    String profile = "//*[@id=\"root\"]/div[1]/div/div/div/div/div/header/div[4]/a/div[2]/div[1]";
     String logout1 = "//*[text()='Logout']";
     String cancel = "//*[@id=\"root\"]/div[2]/section/div[2]/div[2]/div/div/div/div/button";
     String selectflag = "//*[@id=\"flag-dropdown\"]/div/div";
@@ -103,7 +103,7 @@ public class PageSignIn extends BasePage{
     public void clicklogout() throws InterruptedException {
 
     	Thread.sleep(1000);
-        click(By.className(profile));  
+        click(By.xpath(profile));  
         Thread.sleep(1000);
         click(By.xpath(logout1));  
 
