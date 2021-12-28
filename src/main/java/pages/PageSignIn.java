@@ -34,7 +34,7 @@ public class PageSignIn extends BasePage{
     String enterotp = "//*[@id=\"root\"]/div[2]/div/section/div/div[2]/div/div/div/div/div/div/div/div[1]/div[1]/input";
     String profile = "//*[@id=\"root\"]/div[1]/div/div/div/div/div/header/div[4]/a/div[2]/div[1]";
     String logout1 = "/html/body/div[5]/div/div/ul/li[2]/span";
-    String cancel = "//*[@id=\"root\"]/div[2]/section/div[2]/div[2]/div/div/div/div/button/img";
+    String cancel = "//*[@id=\"root\"]/div[2]/section/div[2]/div[2]/div/div/div/div/button";
     String selectflag = "//*[@id=\"flag-dropdown\"]/div/div";
     String flag = "//*[@id=\"flag-dropdown\"]/ul/li[219]/span[1]";
     String emptyerror = "//*[@id=\"phoneTab\"]/div/main/div/div/div/span";
