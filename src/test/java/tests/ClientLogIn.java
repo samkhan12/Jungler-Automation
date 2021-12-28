@@ -47,12 +47,11 @@ public class ClientLogIn extends BaseTest {
         
         Thread.sleep(1000);
         SignInPage.verifyDashboard();
-
         
 	    
 	}
     
-    @Test (priority = 2, description="Verify that client should able to cancel login onclick cancel icon")
+    @Test (priority = 1, description="Verify that client should able to cancel login onclick cancel icon")
    	public void TC_Positive_Verify_that_Client_ShouldAble_cancel_LoginOnclick_CancelButton() throws InterruptedException {
    		
    		
@@ -69,7 +68,7 @@ public class ClientLogIn extends BaseTest {
            
            //*************PAGE METHODS********************
            
-      //     SignInPage.clicklogout();
+           SignInPage.clicklogout();
            homePage.goToJungler();
            SignInPage.clickOnCancel();
            
@@ -109,7 +108,7 @@ public class ClientLogIn extends BaseTest {
    	}
     
     
-    @Test (priority = 1, description="Verify that client should get error message in case of empty field")
+    @Test (priority = 2, description="Verify that client should get error message in case of empty field")
    	public void TC_Positive_Verify_that_Client_ShouldGet_ErrorMessage_inCaseof_Emptyfield() throws InterruptedException {
    		
    		
@@ -126,8 +125,6 @@ public class ClientLogIn extends BaseTest {
            
            //*************PAGE METHODS********************
            
-           SignInPage.clicklogout();
-
            homePage.goToJungler();
 
            SignInPage.clickonphone();
