@@ -6,6 +6,7 @@ import static org.testng.Assert.assertTrue;
 import java.util.ArrayList;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -107,10 +108,16 @@ public class PageSignIn extends BasePage{
     	WebElement element = wait.until(
     	ExpectedConditions.visibilityOfElementLocated(By.xpath(profile)));
     	element.click();
+    	
+    	
+    	WebElement click = driver.findElement(By.xpath(profile));
+        JavascriptExecutor executor = (JavascriptExecutor) driver; executor.executeScript("arguments[0].click();", click); 
+    	WebElement click1 = driver.findElement(By.xpath(logout1));
+        JavascriptExecutor executor1 = (JavascriptExecutor) driver; executor1.executeScript("arguments[0].click();", click1); 
   //.  	Thread.sleep(1000);
   //      click(By.xpath(profile));  
-        Thread.sleep(1000);
-        click(By.xpath(logout1));  
+   //     Thread.sleep(1000);
+ //       click(By.xpath(logout1));  
 
         
         }
