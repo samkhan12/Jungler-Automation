@@ -68,6 +68,7 @@ public class ClientLogIn extends BaseTest {
            
            //*************PAGE METHODS********************
            
+           Thread.sleep(10000);
            SignInPage.clicklogout();
            homePage.goToJungler();
            SignInPage.clickOnCancel();
