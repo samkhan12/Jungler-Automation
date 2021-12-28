@@ -2,40 +2,40 @@
 <testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-28T20:09:01 IST" name="N11 Test Suite" finished-at="2021-12-28T20:11:28 IST" duration-ms="147199">
+  <suite started-at="2021-12-28T20:57:57 IST" name="N11 Test Suite" finished-at="2021-12-28T21:00:21 IST" duration-ms="143904">
     <groups>
     </groups>
-    <test started-at="2021-12-28T20:09:01 IST" name="LoginTest" finished-at="2021-12-28T20:11:28 IST" duration-ms="147199">
+    <test started-at="2021-12-28T20:57:57 IST" name="LoginTest" finished-at="2021-12-28T21:00:21 IST" duration-ms="143904">
       <class name="tests.ClientLogIn">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ClientLogIn@1b7cc17c]" started-at="2021-12-28T20:09:01 IST" name="setup" finished-at="2021-12-28T20:09:04 IST" duration-ms="2958" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.ClientLogIn@1b7cc17c]" started-at="2021-12-28T20:57:57 IST" name="setup" finished-at="2021-12-28T20:58:00 IST" duration-ms="2943" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TC_Positive_Verify_that_Client_ShouldAble_Toget_ErrorMessage_onUsing_InvalidNumber()[pri:1, instance:tests.ClientLogIn@1b7cc17c]" started-at="2021-12-28T20:09:04 IST" name="TC_Positive_Verify_that_Client_ShouldAble_Toget_ErrorMessage_onUsing_InvalidNumber" description="Verify that client should get the error message when using invalid number" finished-at="2021-12-28T20:09:18 IST" duration-ms="13514" status="PASS">
+        <test-method signature="TC_Positive_Verify_that_Client_ShouldAble_Toget_ErrorMessage_onUsing_InvalidNumber()[pri:1, instance:tests.ClientLogIn@1b7cc17c]" started-at="2021-12-28T20:58:00 IST" name="TC_Positive_Verify_that_Client_ShouldAble_Toget_ErrorMessage_onUsing_InvalidNumber" description="Verify that client should get the error message when using invalid number" finished-at="2021-12-28T20:58:13 IST" duration-ms="13463" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Positive_Verify_that_Client_ShouldAble_Toget_ErrorMessage_onUsing_InvalidNumber -->
-        <test-method signature="TC_Positive_Verify_that_Client_ShouldAble_cancel_LoginOnclick_CancelButton()[pri:1, instance:tests.ClientLogIn@1b7cc17c]" started-at="2021-12-28T20:09:18 IST" name="TC_Positive_Verify_that_Client_ShouldAble_cancel_LoginOnclick_CancelButton" description="Verify that client should able to cancel login onclick cancel icon" finished-at="2021-12-28T20:09:29 IST" duration-ms="11611" status="PASS">
+        <test-method signature="TC_Positive_Verify_that_Client_ShouldAble_cancel_LoginOnclick_CancelButton()[pri:1, instance:tests.ClientLogIn@1b7cc17c]" started-at="2021-12-28T20:58:13 IST" name="TC_Positive_Verify_that_Client_ShouldAble_cancel_LoginOnclick_CancelButton" description="Verify that client should able to cancel login onclick cancel icon" finished-at="2021-12-28T20:58:25 IST" duration-ms="11209" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Positive_Verify_that_Client_ShouldAble_cancel_LoginOnclick_CancelButton -->
-        <test-method signature="TC_Positive_Verify_that_Client_ShouldAble_ToLogin_Through_PhoneNumber()[pri:2, instance:tests.ClientLogIn@1b7cc17c]" started-at="2021-12-28T20:09:29 IST" name="TC_Positive_Verify_that_Client_ShouldAble_ToLogin_Through_PhoneNumber" description="Verify that client should able to login through phone number" finished-at="2021-12-28T20:09:39 IST" duration-ms="10086" status="PASS">
+        <test-method signature="TC_Positive_Verify_that_Client_ShouldAble_ToLogin_Through_PhoneNumber()[pri:2, instance:tests.ClientLogIn@1b7cc17c]" started-at="2021-12-28T20:58:25 IST" name="TC_Positive_Verify_that_Client_ShouldAble_ToLogin_Through_PhoneNumber" description="Verify that client should able to login through phone number" finished-at="2021-12-28T20:58:35 IST" duration-ms="10035" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Positive_Verify_that_Client_ShouldAble_ToLogin_Through_PhoneNumber -->
-        <test-method signature="TC_Positive_Verify_that_Client_ShouldAble_Changethe_CountryCode()[pri:3, instance:tests.ClientLogIn@1b7cc17c]" started-at="2021-12-28T20:09:39 IST" name="TC_Positive_Verify_that_Client_ShouldAble_Changethe_CountryCode" description="Verify that client should able to change the country code" finished-at="2021-12-28T20:09:54 IST" duration-ms="14753" status="PASS">
+        <test-method signature="TC_Positive_Verify_that_Client_ShouldAble_Changethe_CountryCode()[pri:3, instance:tests.ClientLogIn@1b7cc17c]" started-at="2021-12-28T20:58:35 IST" name="TC_Positive_Verify_that_Client_ShouldAble_Changethe_CountryCode" description="Verify that client should able to change the country code" finished-at="2021-12-28T20:58:47 IST" duration-ms="12287" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Positive_Verify_that_Client_ShouldAble_Changethe_CountryCode -->
-        <test-method signature="TC_Positive_Verify_that_Client_ShouldAble_ToResend_OTPThrough_PhoneNumber()[pri:4, instance:tests.ClientLogIn@1b7cc17c]" started-at="2021-12-28T20:09:54 IST" name="TC_Positive_Verify_that_Client_ShouldAble_ToResend_OTPThrough_PhoneNumber" description="Verify that client should able to resend OTP through phone number" finished-at="2021-12-28T20:11:23 IST" duration-ms="88470" status="PASS">
+        <test-method signature="TC_Positive_Verify_that_Client_ShouldAble_ToResend_OTPThrough_PhoneNumber()[pri:4, instance:tests.ClientLogIn@1b7cc17c]" started-at="2021-12-28T20:58:47 IST" name="TC_Positive_Verify_that_Client_ShouldAble_ToResend_OTPThrough_PhoneNumber" description="Verify that client should able to resend OTP through phone number" finished-at="2021-12-28T21:00:15 IST" duration-ms="87847" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Positive_Verify_that_Client_ShouldAble_ToResend_OTPThrough_PhoneNumber -->
-        <test-method signature="TC_Positive_Verify_that_Client_ShouldGet_ErrorMessage_inCaseof_Emptyfield()[pri:6, instance:tests.ClientLogIn@1b7cc17c]" started-at="2021-12-28T20:11:23 IST" name="TC_Positive_Verify_that_Client_ShouldGet_ErrorMessage_inCaseof_Emptyfield" description="Verify that client should get error message in case of empty field" finished-at="2021-12-28T20:11:28 IST" duration-ms="5667" status="PASS">
+        <test-method signature="TC_Positive_Verify_that_Client_ShouldGet_ErrorMessage_inCaseof_Emptyfield()[pri:6, instance:tests.ClientLogIn@1b7cc17c]" started-at="2021-12-28T21:00:15 IST" name="TC_Positive_Verify_that_Client_ShouldGet_ErrorMessage_inCaseof_Emptyfield" description="Verify that client should get error message in case of empty field" finished-at="2021-12-28T21:00:21 IST" duration-ms="6027" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Positive_Verify_that_Client_ShouldGet_ErrorMessage_inCaseof_Emptyfield -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.ClientLogIn@1b7cc17c]" started-at="2021-12-28T20:11:28 IST" name="teardown" finished-at="2021-12-28T20:11:28 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.ClientLogIn@1b7cc17c]" started-at="2021-12-28T21:00:21 IST" name="teardown" finished-at="2021-12-28T21:00:21 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
