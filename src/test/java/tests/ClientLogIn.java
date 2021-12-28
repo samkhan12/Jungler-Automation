@@ -68,9 +68,9 @@ public class ClientLogIn extends BaseTest {
            
            //*************PAGE METHODS********************
            
-           Thread.sleep(1000);
-           SignInPage.clicklogout();
-           homePage.goToJungler();
+          // Thread.sleep(1000);
+          // SignInPage.clicklogout();
+         //  homePage.goToJungler();
            SignInPage.clickOnCancel();
            
            //*************ASSERTIONS***********************
@@ -97,7 +97,12 @@ public class ClientLogIn extends BaseTest {
            PageSignIn SignInPage = new PageSignIn(driver,wait);
            
            //*************PAGE METHODS********************
-           
+          
+           Thread.sleep(1000);
+           SignInPage.clicklogout();
+           homePage.goToJungler();
+           SignInPage.clickonphone();
+
            Thread.sleep(5000);
            SignInPage.changeflag();
            
@@ -201,7 +206,7 @@ public class ClientLogIn extends BaseTest {
            
            //*************ASSERTIONS***********************
            
-           Thread.sleep(1000);
+           Thread.sleep(2000);
            SignInPage.verifyEmptyCase("We don't recognize this phone number, please try again or sign up for an account.");
            
    	    

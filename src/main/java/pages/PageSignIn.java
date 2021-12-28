@@ -37,7 +37,7 @@ public class PageSignIn extends BasePage{
     String cancel = "//*[@id=\"root\"]/div[2]/section/div[2]/div[2]/div/div/div/div/button";
     String selectflag = "//*[@id=\"flag-dropdown\"]/div/div";
     String flag = "//*[@id=\"flag-dropdown\"]/ul/li[219]/span[1]";
-    String emptyerror = "//*[@id=\"phoneTab\"]/div/main/div/div/div/span";
+    String emptyerror = "error_field";
     String resendotp = "//*[@id=\"root\"]/div[2]/div/section/div/div[2]/div/div/div/div/button";
     String optmsg = "//*[@id=\"root\"]/div[2]/div/section/div/div[2]/div/div/div/div/div/div/div/div[3]/span";
     String errormsg1 = "//*[@id=\"phoneTab\"]/div/main/div/div/div/span";
@@ -158,7 +158,7 @@ public class PageSignIn extends BasePage{
  
  public void verifyEmptyCase(String expectedText)  {
 		
-	    Assert.assertEquals(readText(By.xpath(emptyerror)), expectedText);
+	    Assert.assertEquals(readText(By.className(emptyerror)), expectedText);
 	}
  
  public void verifyResendOTP(String expectedText)  {
