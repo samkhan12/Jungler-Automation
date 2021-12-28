@@ -101,9 +101,14 @@ public class PageSignIn extends BasePage{
         }
     	
     public void clicklogout() throws InterruptedException {
-
-    	Thread.sleep(1000);
-        click(By.xpath(profile));  
+        
+    	
+    	WebDriverWait wait = new WebDriverWait(driver, 10);
+    	WebElement element = wait.until(
+    	ExpectedConditions.visibilityOfElementLocated(By.xpath(profile)));
+    	element.click();
+  //.  	Thread.sleep(1000);
+  //      click(By.xpath(profile));  
         Thread.sleep(1000);
         click(By.xpath(logout1));  
 
