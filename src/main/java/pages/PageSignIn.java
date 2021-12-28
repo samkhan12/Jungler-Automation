@@ -102,7 +102,7 @@ public class PageSignIn extends BasePage{
     	
     public void clicklogout() throws InterruptedException {
 
-    	Thread.sleep(10000);
+    	Thread.sleep(1000);
         click(By.className(profile));  
         Thread.sleep(1000);
         click(By.xpath(logout1));  

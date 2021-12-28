@@ -19,7 +19,7 @@ public class ClientLogIn extends BaseTest {
     // 2) We send these driver and wait variables to the page class with below declaration
     // 3) super () method in page class transfer the driver and wait variables values to the BasePage class.
 	
-    @Test (priority = 0, description="Verify that client should able to login through phone number")
+    @Test (priority = 2, description="Verify that client should able to login through phone number")
 	public void TC_Positive_Verify_that_Client_ShouldAble_ToLogin_Through_PhoneNumber() throws InterruptedException {
 		
 		
@@ -109,7 +109,7 @@ public class ClientLogIn extends BaseTest {
    	}
     
     
-    @Test (priority = 2, description="Verify that client should get error message in case of empty field")
+    @Test (priority = 6, description="Verify that client should get error message in case of empty field")
    	public void TC_Positive_Verify_that_Client_ShouldGet_ErrorMessage_inCaseof_Emptyfield() throws InterruptedException {
    		
    		
@@ -175,7 +175,7 @@ public class ClientLogIn extends BaseTest {
        
     
     
-    @Test (priority = 4, description="Verify that client should get the error message when using invalid number")
+    @Test (priority = 1, description="Verify that client should get the error message when using invalid number")
    	public void TC_Positive_Verify_that_Client_ShouldAble_Toget_ErrorMessage_onUsing_InvalidNumber() throws InterruptedException {
    		
    		
