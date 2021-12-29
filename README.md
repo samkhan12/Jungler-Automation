@@ -8,4 +8,4 @@
 * ngrok and localtunnel
 * Installed in new system test
 
-* Installed Automation framework in new System
+* Installed Automation framework in new Systems
