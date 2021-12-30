@@ -9,7 +9,7 @@
     <classes>
       <class name="tests.ClientLogIn">
         <methods>
-          <include name="TC_Positive_Verify_that_Client_ShouldAble_Toget_ErrorMessage_onUsing_InvalidNumber"/>
+          <include name="TC_Positive_Verify_that_Client_ShouldAble_ToResend_OTPThrough_PhoneNumber"/>
           <include name="teardown"/>
           <include name="setup"/>
         </methods>

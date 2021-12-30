@@ -42,8 +42,15 @@ public class PageSignIn extends BasePage{
     String resendotp = "//*[@id=\"root\"]/div[2]/div/section/div/div[2]/div/div/div/div/button";
     String optmsg = "//*[@id=\"root\"]/div[2]/div/section/div/div[2]/div/div/div/div/div/div/div/div[3]/span";
     String errormsg1 = "//*[@id=\"phoneTab\"]/div/main/div/div/div/span";
+    String emailbtn = "//*[@id=\"root\"]/div[2]/section/div[2]/div[2]/div/div/div/div/div/div/div/div/div/ul/li[1]/a";
+    String emailerror = "//*[@id=\"emailTab\"]/div/main/div/div/div/span";
+    String emptyemail = "//*[@id=\"emailTab\"]/div/main/div/div/div/span";
+    String clremail = "//*[@id=\"emailTab\"]/div/main/div/div/div/div/div/div/input";
+    String email = "//*[@id=\"emailTab\"]/div/main/div/div/div/div/div/div/input";
+    String existemail = "//*[@id=\"emailTab\"]/div/main/div/div/div/span";
+    String success = "//*[@id=\"emailTab\"]/div/main/div/div/div/span";
     
-
+    
     //*********Page Methods*********
     
     public void clickonphone() throws InterruptedException {
@@ -53,11 +60,25 @@ public class PageSignIn extends BasePage{
         
         }
     
+    public void clickonemail() throws InterruptedException {
+
+    	Thread.sleep(1000);
+        click(By.xpath(emailbtn));    
+        
+        }
+    
     
     public void enternum(String number) throws InterruptedException {
 
     	Thread.sleep(1000);
         writeText(By.xpath(numb),number);
+        
+        }
+    
+    public void enteremail(String email1) throws InterruptedException {
+
+    	Thread.sleep(1000);
+        writeText(By.xpath(email),email1);
         
         }
     
@@ -81,6 +102,14 @@ public class PageSignIn extends BasePage{
     	Thread.sleep(1000);
         click(By.xpath(cancel));    
         
+        }
+    
+    
+    public void clearemail() throws InterruptedException {
+
+    	Thread.sleep(1000);
+
+    	driver.findElement(By.xpath(clremail)).clear();      
         }
     
     public void changeflag() throws InterruptedException {
@@ -182,6 +211,27 @@ public class PageSignIn extends BasePage{
  public void verifyInvalidNumber(String expectedText)  {
 		
 	    Assert.assertEquals(readText(By.xpath(errormsg1)), expectedText);
+	}
+ 
+ public void verifyInvalidEmail(String expectedText)  {
+		
+	    Assert.assertEquals(readText(By.xpath(emailerror)), expectedText);
+	}
+ 
+ 
+ public void verifyEmptyEmail(String expectedText)  {
+		
+	    Assert.assertEquals(readText(By.xpath(emptyemail)), expectedText);
+	}
+ 
+ public void verifyExistEmail(String expectedText)  {
+		
+	    Assert.assertEquals(readText(By.xpath(existemail)), expectedText);
+	}
+ 
+ public void verifySuccessEmail(String expectedText)  {
+		
+	    Assert.assertEquals(readText(By.xpath(success)), expectedText);
 	}
  
  
