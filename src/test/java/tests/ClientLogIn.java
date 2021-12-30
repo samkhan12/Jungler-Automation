@@ -366,6 +366,40 @@ public class ClientLogIn extends BaseTest {
                   
           	    
           	}
+           
+           
+
+           @Test (priority = 12, description="Verify that client should able to login onclick verification link sent to registered email")
+          	public void TC_Positive_Verify_that_Client_ShouldAble_LoginOnclick_LinkSentTo_Email_forVerification() throws InterruptedException {
+          		
+          		
+          		BasicConfigurator.configure();
+          	    
+
+                  //ExtentReports Description
+                  ExtentTestManager.getTest().setDescription("Verify that client should able to login onclick verification link sent to registered email");
+                  
+                  //*************PAGE INSTANTIATIONS*************
+                  SignInHomePage homePage = new SignInHomePage(driver,wait);
+           
+                  PageSignIn SignInPage = new PageSignIn(driver,wait);
+                  
+                  //*************PAGE METHODS********************
+                  
+                  
+                  Thread.sleep(1000);
+                  SignInPage.emailLinkVerification();
+                  
+                  //*************ASSERTIONS***********************
+                  
+                  ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
+                  driver.switchTo().window(tabs.get(1));
+                  
+                  Thread.sleep(5000);
+                  SignInPage.verifyEmailVerification();
+                  
+          	    
+          	}
     
     
     

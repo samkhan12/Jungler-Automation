@@ -3,19 +3,24 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.ClientSignUp">
+      <class name="tests.ClientLogIn">
         <methods>
-          <include name="TC_Positive_Verify_that_clientredirects_ToJunglerClientDashboard_Onclick_GoToJungler"/>
-          <include name="TC_Negative_Verify_that_ErrorDisplayed_WhenUser_Enter_InvalidValue_InEmailField"/>
-          <include name="TC_Negative_Verify_that_Client_ShouldGet_theError_Onclick_SubmitButton_forEmptyFieldCase"/>
-          <include name="TC_Negative_Verify_that_ErrorDisplayed_WhenUser_Enter_AlphabeticalValue_InPhoneNumberField"/>
-          <include name="TC_Negative_Verify_that_ErrorDisplayed_WhenUser_Enter_AlreadyExistingUser_InEmailField"/>
-          <include name="TC_Positive_Verify_that_clientShould_ableToSchedule_Appointment_byDateAndTime"/>
+          <include name="TC_Positive_Verify_that_Client_ShouldAble_Toget_ErrorMessage_onUsing_InvalidNumber"/>
+          <include name="TC_Positive_Verify_that_Client_ShouldGet_ErrorMessage_inCaseof_Emptyfield"/>
+          <include name="TC_Positive_Verify_that_Client_ShouldAble_Changethe_CountryCode"/>
+          <include name="TC_Positive_Verify_that_Client_ShouldAble_ToLogin_Through_PhoneNumber"/>
+          <include name="TC_Positive_Verify_that_Client_ShouldAble_Toget_ErrorMessage_onUsing_NonRegisteredEmail"/>
+          <include name="TC_Positive_Verify_that_Client_ShouldGet_Error_OnUsingInvalidEmail"/>
           <include name="teardown"/>
-          <include name="TC_Positive_Verify_that_Client_ShouldAble_ToSignUp_Through_Option1"/>
+          <include name="TC_Positive_Verify_that_Client_ShouldGet_ErrorMessage_inCaseofEmail_Emptyfield"/>
           <include name="setup"/>
+          <include name="TC_Positive_Verify_that_Client_ShouldAble_cancel_LoginOnclick_EmailCancelButton"/>
+          <include name="TC_Positive_Verify_that_Client_ShouldAble_LoginOnclick_LinkSentTo_Email_forVerification"/>
+          <include name="TC_Positive_Verify_that_Client_ShouldAble_cancel_LoginOnclick_CancelButton"/>
+          <include name="TC_Positive_Verify_that_Client_Should_getValidMessage_onUsing_RegisteredEmail"/>
+          <include name="TC_Positive_Verify_that_Client_ShouldAble_ToResend_OTPThrough_PhoneNumber"/>
         </methods>
-      </class> <!-- tests.ClientSignUp -->
+      </class> <!-- tests.ClientLogIn -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

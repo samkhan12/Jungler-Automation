@@ -133,23 +133,40 @@ public class PageSignIn extends BasePage{
     public void clicklogout() throws InterruptedException {
         
     	
-    //	WebDriverWait wait = new WebDriverWait(driver, 10);
-   // 	WebElement element = wait.until(
-   // 	ExpectedConditions.visibilityOfElementLocated(By.xpath(profile)));
-   // 	element.click();
+ 
     	
     	
     	WebElement click = driver.findElement(By.xpath(profile));
         JavascriptExecutor executor = (JavascriptExecutor) driver; executor.executeScript("arguments[0].click();", click); 
     	WebElement click1 = driver.findElement(By.xpath(logout1));
         JavascriptExecutor executor1 = (JavascriptExecutor) driver; executor1.executeScript("arguments[0].click();", click1); 
-  //.  	Thread.sleep(1000);
-  //      click(By.xpath(profile));  
-   //     Thread.sleep(1000);
- //       click(By.xpath(logout1));  
+
 
         
         }
+    
+    public void emailLinkVerification() throws InterruptedException {
+    	
+    String url = "https://www.mailinator.com/v4/public/inboxes.jsp?to=sam";
+    
+    	  {
+    		    
+    	    	driver.get(url);
+    	    	
+    	    	Thread.sleep(2000);
+    	    	driver.findElement(By.xpath("//*[contains(text(),'Suburban Jungle Team')]")).click();
+    	    	
+    	    	Thread.sleep(5000);
+    	    	driver.switchTo().frame("html_msg_body");
+    	    	Thread.sleep(1000);
+    	    	driver.findElement(By.linkText("here")).click();
+    	    	
+    	    	
+    	}
+        
+    }
+    
+    
      
     public void verifyLogout() {
     	
@@ -197,6 +214,14 @@ public class PageSignIn extends BasePage{
 	 	
    }
  
+ public void verifyEmailVerification() {
+
+	 
+	 	String actualTitle = driver.getTitle();
+	 	String expectedTitle = "Dashboard | Jungler";
+	 	assertEquals(expectedTitle,actualTitle);   
+	 	
+}
  public void verifyEmptyCase(String expectedText)  {
 		
 	    Assert.assertEquals(readText(By.className(emptyerror)), expectedText);

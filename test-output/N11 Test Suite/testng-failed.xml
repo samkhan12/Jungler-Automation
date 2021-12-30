@@ -7,13 +7,14 @@
   </listeners>
   <test thread-count="5" name="LoginTest(failed)">
     <classes>
-      <class name="tests.ClientLogIn">
+      <class name="tests.AgentSignUp">
         <methods>
-          <include name="TC_Positive_Verify_that_Client_ShouldAble_ToResend_OTPThrough_PhoneNumber"/>
+          <include name="TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields"/>
+          <include name="TC_Negative_Verify_that_Agent_Should_ValidateFirstForm_InCaseOfValidFields"/>
           <include name="teardown"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- tests.ClientLogIn -->
+      </class> <!-- tests.AgentSignUp -->
     </classes>
   </test> <!-- LoginTest(failed) -->
 </suite> <!-- Failed suite [N11 Test Suite] -->
