@@ -6,6 +6,7 @@ import java.util.Random;
 
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
@@ -108,9 +109,11 @@ public class PageAgentSignUp extends BasePage{
 
   	  
 
+    	WebElement number = driver.findElement(By.name(mobile));
+        JavascriptExecutor executor = (JavascriptExecutor) driver; executor.executeScript("arguments[0].click();", number); 
        
-        	WebElement number = driver.findElement(By.name(mobile));
-        	number.click(); 
+        //	WebElement number = driver.findElement(By.name(mobile));
+        //	number.click(); 
         	String randomNumbers = RandomStringUtils.randomNumeric(5);
         	String phNo = 83456+randomNumbers;
         	number.sendKeys(phNo);
