@@ -396,9 +396,7 @@ public class ClientLogIn extends BaseTest {
                   driver.switchTo().window(tabs.get(1));
                   
                   Thread.sleep(10000);
-                  SignInPage.verifyEmailVerification();
-                  
-          	    
+                  SignInPage.verifyWelcome();          	    
           	}
     
     
