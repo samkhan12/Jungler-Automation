@@ -395,7 +395,7 @@ public class ClientLogIn extends BaseTest {
                   ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
                   driver.switchTo().window(tabs.get(1));
                   
-                  Thread.sleep(5000);
+                  Thread.sleep(10000);
                   SignInPage.verifyEmailVerification();
                   
           	    
