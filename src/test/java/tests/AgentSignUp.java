@@ -1,6 +1,8 @@
 package tests;
 
 
+import java.awt.AWTException;
+
 import org.apache.log4j.BasicConfigurator;
 import org.testng.annotations.Test;
 
@@ -49,7 +51,7 @@ public class AgentSignUp extends BaseTest {
 	 
 	}
     
-    @Test (priority = 1, description="Verify that agent should get validate first form in case of valid fields")
+    @Test (priority = 5, description="Verify that agent should get validate first form in case of valid fields")
    	public void TC_Negative_Verify_that_Agent_Should_ValidateFirstForm_InCaseOfValidFields() throws InterruptedException {
    		
    		
@@ -66,6 +68,7 @@ public class AgentSignUp extends BaseTest {
            
            //*************PAGE METHODS********************
       
+           SignUp.clearform1();
            SignUp.entervalues("Test", "Agent", "sample.com");
            SignUp.enteremail();
            SignUp.enternumber();
@@ -74,7 +77,7 @@ public class AgentSignUp extends BaseTest {
            
            //*************ASSERTIONS***********************
            
-           Thread.sleep(10000);
+           Thread.sleep(15000);
            
            SignUp.verifyForm2("Tell us more about you");
    	 
@@ -111,5 +114,189 @@ public class AgentSignUp extends BaseTest {
    	}
       */
        
+
+
+    @Test (priority = 1, description="Verify that error get displayed when agent enter invalid number")
+	public void TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_InvalidNumber() throws InterruptedException {
+		
+		
+		BasicConfigurator.configure();
+	    
+
+       //ExtentReports Description
+       ExtentTestManager.getTest().setDescription("Verify that error get displayed when agent enter invalid number");
+       
+       //*************PAGE INSTANTIATIONS*************
+       AgentSignUpHome homePage = new AgentSignUpHome(driver,wait);
+
+       PageAgentSignUp SignUp = new PageAgentSignUp(driver,wait);
+       
+       //*************PAGE METHODS********************
+  
+       homePage.goToJungler();
+       SignUp.clickoncancel();
+       SignUp.enterinvalidnumber();
+       SignUp.clickbtn();
+    
+       
+       //*************ASSERTIONS***********************
+       
+       Thread.sleep(1000);
+       
+       SignUp.verifyInvalidNumber("Invalid Mobile Number.");
+	}
+    
+    
+    @Test (priority = 2, description="Verify that error get displayed when agent enter invalid email")
+   	public void TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_InvalidEmail() throws InterruptedException {
+   		
+   		
+   		BasicConfigurator.configure();
+   	    
+
+          //ExtentReports Description
+          ExtentTestManager.getTest().setDescription("Verify that error get displayed when agent enter invalid email");
+          
+          //*************PAGE INSTANTIATIONS*************
+          AgentSignUpHome homePage = new AgentSignUpHome(driver,wait);
+
+          PageAgentSignUp SignUp = new PageAgentSignUp(driver,wait);
+          
+          //*************PAGE METHODS********************
+     
+          homePage.goToJungler();
+          SignUp.clickoncancel();
+          SignUp.clearform1();
+          SignUp.enterinvalidemail();
+          SignUp.clickbtn();
+       
+          
+          //*************ASSERTIONS***********************
+          
+          Thread.sleep(1000);
+          
+          
+          SignUp.verifyInvalidEmail("Your email address is Invalid.");
+   	}
+
+    
+    @Test (priority = 3, description="Verify that error get displayed when agent enter already exist user email")
+   	public void TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_AlreadyExistUser() throws InterruptedException {
+   		
+   		
+   		BasicConfigurator.configure();
+   	    
+
+          //ExtentReports Description
+          ExtentTestManager.getTest().setDescription("Verify that error get displayed when agent enter already exist user email");
+          
+          //*************PAGE INSTANTIATIONS*************
+          AgentSignUpHome homePage = new AgentSignUpHome(driver,wait);
+
+          PageAgentSignUp SignUp = new PageAgentSignUp(driver,wait);
+          
+          //*************PAGE METHODS********************
+     
+       // homePage.goToJungler();
+       // SignUp.clickoncancel();
+          SignUp.clearform1();
+          SignUp.entervalues("Test", "Agent", "sample.com");
+          SignUp.enteruseremail("test@mailinator.com");
+          SignUp.enternumber();
+          SignUp.selectcity();
+          SignUp.clickbtn();
+       
+          
+          //*************ASSERTIONS***********************
+          
+          Thread.sleep(5000);
+          
+          
+          SignUp.verifyExistUser("You are already registered. Please email info@suburbanjunglegroup.com if you need assistance or have forgotten your login credentials.");
+   	}
+
+
+    
+    @Test (priority = 4, description="Verify that agent not able to enter alphabetical value in mobile number field")
+   	public void TC_Negative_Verify_that_Agent_ShouldNot_AbleToEnter_AlphabeticalValue_inMobileNumber_Field() throws InterruptedException {
+   		
+   		
+   		BasicConfigurator.configure();
+   	    
+
+          //ExtentReports Description
+          ExtentTestManager.getTest().setDescription("Verify that agent not able to enter alphabetical value in mobile number field");
+          
+          //*************PAGE INSTANTIATIONS*************
+          AgentSignUpHome homePage = new AgentSignUpHome(driver,wait);
+
+          PageAgentSignUp SignUp = new PageAgentSignUp(driver,wait);
+          
+          //*************PAGE METHODS********************
+     
+      
+          SignUp.clearform1();
+          SignUp.verifyalphabetical();
+       
+    }
+    
+    
+    @Test (priority = 7, description="Verify that agent should get validation error in case of empty fields-step 2")
+   	public void TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step2() throws InterruptedException {
+   		
+   		
+   		BasicConfigurator.configure();
+   	    
+
+          //ExtentReports Description
+          ExtentTestManager.getTest().setDescription("Verify that agent should get validation error in case of empty fields-step 2");
+          
+          //*************PAGE INSTANTIATIONS*************
+          AgentSignUpHome homePage = new AgentSignUpHome(driver,wait);
+
+          PageAgentSignUp SignUp = new PageAgentSignUp(driver,wait);
+          
+          //*************PAGE METHODS********************
+     
+          Thread.sleep(3000);
+          SignUp.clickbtn2();
+          
+          Thread.sleep(3000);
+          SignUp.verifyErrors2("Please enter city", "Please select value", "Please select towns", "Please enter value", "Please enter business profile link", "Please enter Zillow profile link", "Please enter bio", "Please select image");
+       
+    }
+    
+    
+    
+    @Test (priority = 8, description="Verify that agent should be able to upload image successfully")
+   	public void TC_Negative_Verify_that_Agent_ShouldbeAble_ToUpload_ImageSuccessfully() throws InterruptedException, AWTException {
+   		
+   		
+   		BasicConfigurator.configure();
+   	    
+
+          //ExtentReports Description
+          ExtentTestManager.getTest().setDescription("Verify that agent should be able to upload image successfully");
+          
+          //*************PAGE INSTANTIATIONS*************
+          AgentSignUpHome homePage = new AgentSignUpHome(driver,wait);
+
+          PageAgentSignUp SignUp = new PageAgentSignUp(driver,wait);
+          
+          //*************PAGE METHODS********************
+     
+          Thread.sleep(1000);
+          SignUp.uploadimage();
+          
+         
+    }
+
+
+
+
+
+
+
+
 }
     

@@ -147,7 +147,7 @@ public class PageSignIn extends BasePage{
     
     public void emailLinkVerification() throws InterruptedException {
     	
-    String url = "https://www.mailinator.com/v4/public/inboxes.jsp?to=sam";
+    String url = "https://www.mailinator.com/v4/public/inboxes.jsp?to=test";
     
     	  {
     		    

@@ -180,7 +180,7 @@ public class ClientLogIn extends BaseTest {
        
     
     
-    @Test (priority = 1, description="Verify that client should get the error message when using invalid number")
+    @Test (priority = 0, description="Verify that client should get the error message when using invalid number")
    	public void TC_Positive_Verify_that_Client_ShouldAble_Toget_ErrorMessage_onUsing_InvalidNumber() throws InterruptedException {
    		
    		
@@ -206,7 +206,7 @@ public class ClientLogIn extends BaseTest {
            
            //*************ASSERTIONS***********************
            
-           Thread.sleep(2000);
+           Thread.sleep(5000);
            SignInPage.verifyEmptyCase("We don't recognize this phone number, please try again or sign up for an account.");
            
    	    
