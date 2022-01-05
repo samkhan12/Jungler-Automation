@@ -367,6 +367,9 @@ public class AgentSignUp extends BaseTest {
      
           Thread.sleep(1000);
           SignUp.selectown();
+          Robot robot = new Robot();
+          robot.keyPress(KeyEvent.VK_PAGE_DOWN);
+          robot.keyRelease(KeyEvent.VK_PAGE_DOWN);
          
     }
 
@@ -397,6 +400,8 @@ public class AgentSignUp extends BaseTest {
             Robot robot = new Robot();
             robot.keyPress(KeyEvent.VK_PAGE_DOWN);
             robot.keyRelease(KeyEvent.VK_PAGE_DOWN);
+            
+            SignUp.clickbtn2();
       	
 
          

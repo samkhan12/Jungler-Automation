@@ -152,8 +152,9 @@ public class PageAgentSignUp extends BasePage{
     	WebElement check = driver.findElement(By.xpath(checkbox));
         JavascriptExecutor executor = (JavascriptExecutor) driver; executor.executeScript("arguments[0].click();", check); 
 
-        driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[1]/div/div/div/div/div[2]")).click();    	
-   
+        Thread.sleep(1000);
+        driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[1]/div/div/div/div/div[2]")).click();
+        Thread.sleep(2000);   
     }
     
     public void clearform1() throws InterruptedException {
@@ -259,13 +260,7 @@ public class PageAgentSignUp extends BasePage{
     	 WebElement number = driver.findElement(By.xpath(btnxpath2));
          JavascriptExecutor executor = (JavascriptExecutor) driver; executor.executeScript("arguments[0].click();", number); 
          
-         Thread.sleep(1000);
-         driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[1]/div/div/div/div/div[2]/div/form/div/div[2]/div[3]/div/div[1]/button")).click();
-         Thread.sleep(2000);
-    
-        
-
-  
+      
          
          }
      public void enteremail() throws InterruptedException {    
