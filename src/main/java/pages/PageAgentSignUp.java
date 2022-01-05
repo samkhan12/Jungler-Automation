@@ -80,7 +80,7 @@ public class PageAgentSignUp extends BasePage{
     String btnxpath = "//*[@id=\"gatsby-focus-wrapper\"]/div/div/div[2]/div[2]/div/div/div/button";
     String btnxpath2 = "//*[@id=\"root\"]/div/div[1]/div/div/div/div/div[2]/div/form/div/div[2]/button";
     String upload = "//*[@id=\"root\"]/div/div[1]/div/div/div/div/div[2]/div/form/div/div[2]/div[8]/div/section/div/button";
-    String btnxpath3 = "btn btn__btn btn-dark btn__lg w__100";
+    String btnxpath3 = "//button[contains(text(),'Next')]";
     
     //*********Page Methods*********  
     

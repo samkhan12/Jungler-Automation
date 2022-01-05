@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -40,7 +40,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-N11_Test_Suite" class="navigator-link">
-              <span class="suite-name border-passed">N11 Test Suite</span>
+              <span class="suite-name border-failed">N11 Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -93,7 +93,26 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">14 methods,   14 passed</span>
+                    <span class="method-stats">14 methods, 2 failed,   12 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-N11_Test_Suite" class="hide-methods failed suite-N11_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-N11_Test_Suite -->
+                      <a href="#" panel-name="suite-N11_Test_Suite" class="show-methods failed suite-N11_Test_Suite"> (show)</a> <!-- show-methods failed suite-N11_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-N11_Test_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-N11_Test_Suite" title="tests.AgentSignUp" class="method navigator-link" hash-for-method="TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step3">TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-N11_Test_Suite" title="tests.AgentSignUp" class="method navigator-link" hash-for-method="TC_Negative_Verify_that_Agent_Should_SignUp_Successfully_AfterStep3">TC_Negative_Verify_that_Agent_Should_SignUp_Successfully_AfterStep3</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-N11_Test_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -114,11 +133,6 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-N11_Test_Suite" title="tests.AgentSignUp" class="method navigator-link" hash-for-method="TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step3">TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step3</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-N11_Test_Suite" title="tests.AgentSignUp" class="method navigator-link" hash-for-method="TC_Negative_Verify_that_Agent_ShouldNot_AbleToEnter_AlphabeticalValue_inMobileNumber_Field">TC_Negative_Verify_that_Agent_ShouldNot_AbleToEnter_AlphabeticalValue_inMobileNumber_Field</a> <!-- method navigator-link -->
                       </span>
                       <br/>
@@ -135,11 +149,6 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-N11_Test_Suite" title="tests.AgentSignUp" class="method navigator-link" hash-for-method="TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_InvalidNumber">TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_InvalidNumber</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-N11_Test_Suite" title="tests.AgentSignUp" class="method navigator-link" hash-for-method="TC_Negative_Verify_that_Agent_Should_SignUp_Successfully_AfterStep3">TC_Negative_Verify_that_Agent_Should_SignUp_Successfully_AfterStep3</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -184,6 +193,80 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-N11_Test_Suite" class="panel N11_Test_Suite">
+          <div class="suite-N11_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.AgentSignUp</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step3">
+                  </a> <!-- TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step3 -->
+                  <span class="method-name">TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step3</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.btn\ btn__btn\ btn\-dark\ btn__lg\ w__100&quot;}
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-RQ3L8BF&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.18 (b8887b3d1742a..., userDataDir: C:\Users\khans\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61675}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 30a5007487640283f20ef5da70fc4769
+*** Element info: {Using=class name, value=btn btn__btn btn-dark btn__lg w__100}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pages.PageAgentSignUp.clickbtn3(PageAgentSignUp.java:197)
+	at tests.AgentSignUp.TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step3(AgentSignUp.java:437)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify that agent should get validation error in case of empty fields-step 3)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_Negative_Verify_that_Agent_Should_SignUp_Successfully_AfterStep3">
+                  </a> <!-- TC_Negative_Verify_that_Agent_Should_SignUp_Successfully_AfterStep3 -->
+                  <span class="method-name">TC_Negative_Verify_that_Agent_Should_SignUp_Successfully_AfterStep3</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.btn\ btn__btn\ btn\-dark\ btn__lg\ w__100&quot;}
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:25:48&apos;
+System info: host: &apos;DESKTOP-RQ3L8BF&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.18 (b8887b3d1742a..., userDataDir: C:\Users\khans\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61675}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 30a5007487640283f20ef5da70fc4769
+*** Element info: {Using=class name, value=btn btn__btn btn-dark btn__lg w__100}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:412)
+	at org.openqa.selenium.By$ByClassName.findElement(By.java:389)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at pages.PageAgentSignUp.clickbtn3(PageAgentSignUp.java:197)
+	at tests.AgentSignUp.TC_Negative_Verify_that_Agent_Should_SignUp_Successfully_AfterStep3(AgentSignUp.java:467)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify that agent should signup successfully after step3)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-N11_Test_Suite-class-failed -->
           <div class="suite-N11_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -206,15 +289,6 @@
                   <span class="method-name">TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step2</span>
                   <em>
 (Verify that agent should get validation error in case of empty fields-step 2)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step3">
-                  </a> <!-- TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step3 -->
-                  <span class="method-name">TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step3</span>
-                  <em>
-(Verify that agent should get validation error in case of empty fields-step 3)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -251,15 +325,6 @@
                   <span class="method-name">TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_InvalidNumber</span>
                   <em>
 (Verify that error get displayed when agent enter invalid number)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_Negative_Verify_that_Agent_Should_SignUp_Successfully_AfterStep3">
-                  </a> <!-- TC_Negative_Verify_that_Agent_Should_SignUp_Successfully_AfterStep3 -->
-                  <span class="method-name">TC_Negative_Verify_that_Agent_Should_SignUp_Successfully_AfterStep3</span>
-                  <em>
-(Verify that agent should signup successfully after step3)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -378,59 +443,59 @@ data.addRows(14);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TC_Negative_Verify_that_Agent_Should_ValidateFirstForm_InCaseOfValidFields')
 data.setCell(0, 2, 'tests.AgentSignUp')
-data.setCell(0, 3, 21132);
+data.setCell(0, 3, 21287);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_AlreadyExistUser')
+data.setCell(1, 1, 'TC_Negative_Verify_that_Agent_Should_SignUp_Successfully_AfterStep3')
 data.setCell(1, 2, 'tests.AgentSignUp')
-data.setCell(1, 3, 12427);
+data.setCell(1, 3, 12688);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TC_Negative_Verify_that_Agent_ShouldbeAble_ToUpload_ImageSuccessfully')
+data.setCell(2, 1, 'TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_AlreadyExistUser')
 data.setCell(2, 2, 'tests.AgentSignUp')
-data.setCell(2, 3, 9314);
+data.setCell(2, 3, 12574);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields')
+data.setCell(3, 1, 'TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step3')
 data.setCell(3, 2, 'tests.AgentSignUp')
-data.setCell(3, 3, 8732);
+data.setCell(3, 3, 11079);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step2')
+data.setCell(4, 1, 'TC_Negative_Verify_that_Agent_ShouldbeAble_ToUpload_ImageSuccessfully')
 data.setCell(4, 2, 'tests.AgentSignUp')
-data.setCell(4, 3, 8529);
+data.setCell(4, 3, 9303);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'TC_Negative_Verify_that_Agent_ShouldbeAble_ToSelect_Town_Successfully')
+data.setCell(5, 1, 'TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields')
 data.setCell(5, 2, 'tests.AgentSignUp')
-data.setCell(5, 3, 7121);
+data.setCell(5, 3, 8908);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_InvalidEmail')
+data.setCell(6, 1, 'TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step2')
 data.setCell(6, 2, 'tests.AgentSignUp')
-data.setCell(6, 3, 6899);
+data.setCell(6, 3, 8521);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'TC_Negative_Verify_that_Agent_ShouldbeAble_ToSubmit_Step2_Successfully')
+data.setCell(7, 1, 'TC_Negative_Verify_that_Agent_ShouldbeAble_ToSelect_Town_Successfully')
 data.setCell(7, 2, 'tests.AgentSignUp')
-data.setCell(7, 3, 6072);
+data.setCell(7, 3, 7179);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_InvalidNumber')
+data.setCell(8, 1, 'TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_InvalidEmail')
 data.setCell(8, 2, 'tests.AgentSignUp')
-data.setCell(8, 3, 6000);
+data.setCell(8, 3, 6771);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'TC_Negative_Verify_that_Agent_Should_SignUp_Successfully_AfterStep3')
+data.setCell(9, 1, 'TC_Negative_Verify_that_Agent_ShouldbeAble_ToSubmit_Step2_Successfully')
 data.setCell(9, 2, 'tests.AgentSignUp')
-data.setCell(9, 3, 5732);
+data.setCell(9, 3, 6163);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'TC_Negative_Verify_that_Agent_ShouldbeAble_ToSelect_YearSuccessfully')
+data.setCell(10, 1, 'TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_InvalidNumber')
 data.setCell(10, 2, 'tests.AgentSignUp')
-data.setCell(10, 3, 5201);
+data.setCell(10, 3, 5722);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step3')
+data.setCell(11, 1, 'TC_Negative_Verify_that_Agent_ShouldbeAble_ToSelect_YearSuccessfully')
 data.setCell(11, 2, 'tests.AgentSignUp')
-data.setCell(11, 3, 2259);
+data.setCell(11, 3, 5236);
 data.setCell(12, 0, 12)
 data.setCell(12, 1, 'TC_Negative_Verify_that_Agent_ShouldbeAble_ToReachOn_Step3_Successfully')
 data.setCell(12, 2, 'tests.AgentSignUp')
-data.setCell(12, 3, 2015);
+data.setCell(12, 3, 2020);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'TC_Negative_Verify_that_Agent_ShouldNot_AbleToEnter_AlphabeticalValue_inMobileNumber_Field')
 data.setCell(13, 2, 'tests.AgentSignUp')
-data.setCell(13, 3, 1378);
+data.setCell(13, 3, 1366);
 window.suiteTableData['N11_Test_Suite']= { tableData: data, tableDiv: 'times-div-N11_Test_Suite'}
 return data;
 }
@@ -475,63 +540,67 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields</span>
-                <span class="method-start">2824 ms</span>
+                <span class="method-start">3062 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_InvalidNumber</span>
-                <span class="method-start">11567 ms</span>
+                <span class="method-start">11981 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_InvalidEmail</span>
-                <span class="method-start">17569 ms</span>
+                <span class="method-start">17707 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_AlreadyExistUser</span>
-                <span class="method-start">24471 ms</span>
+                <span class="method-start">24481 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_Negative_Verify_that_Agent_ShouldNot_AbleToEnter_AlphabeticalValue_inMobileNumber_Field</span>
-                <span class="method-start">36902 ms</span>
+                <span class="method-start">37058 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_Negative_Verify_that_Agent_Should_ValidateFirstForm_InCaseOfValidFields</span>
-                <span class="method-start">38282 ms</span>
+                <span class="method-start">38426 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step2</span>
-                <span class="method-start">59417 ms</span>
+                <span class="method-start">59716 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_Negative_Verify_that_Agent_ShouldbeAble_ToUpload_ImageSuccessfully</span>
-                <span class="method-start">67949 ms</span>
+                <span class="method-start">68240 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_Negative_Verify_that_Agent_ShouldbeAble_ToSelect_YearSuccessfully</span>
-                <span class="method-start">77272 ms</span>
+                <span class="method-start">77552 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_Negative_Verify_that_Agent_ShouldbeAble_ToSelect_Town_Successfully</span>
-                <span class="method-start">82475 ms</span>
+                <span class="method-start">82790 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_Negative_Verify_that_Agent_ShouldbeAble_ToSubmit_Step2_Successfully</span>
-                <span class="method-start">89599 ms</span>
+                <span class="method-start">89971 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC_Negative_Verify_that_Agent_ShouldbeAble_ToReachOn_Step3_Successfully</span>
-                <span class="method-start">95673 ms</span>
+                <span class="method-start">96136 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step3</span>
-                <span class="method-start">97690 ms</span>
+                <span class="method-start">98158 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">TC_Negative_Verify_that_Agent_Should_SignUp_Successfully_AfterStep3</span>
-                <span class="method-start">99951 ms</span>
+                <span class="method-start">109505 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">105686 ms</span>
+                <span class="method-start">122467 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
