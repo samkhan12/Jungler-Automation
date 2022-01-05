@@ -194,7 +194,7 @@ public class PageAgentSignUp extends BasePage{
         //click(By.xpath(btnxpath3));   
     	 
     	Thread.sleep(10000);
-      	WebElement check = driver.findElement(By.className(btnxpath3));
+      	WebElement check = driver.findElement(By.xpath(btnxpath3));
         JavascriptExecutor executor = (JavascriptExecutor) driver; executor.executeScript("arguments[0].click();", check); 
          
          
