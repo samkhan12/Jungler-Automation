@@ -264,11 +264,7 @@ public class AgentSignUp extends BaseTest {
           
           //*************PAGE METHODS********************
      
-          Thread.sleep(3000);
-          
-          Robot robot = new Robot();
-          robot.keyPress(KeyEvent.VK_PAGE_DOWN);
-          robot.keyRelease(KeyEvent.VK_PAGE_DOWN);
+          Thread.sleep(2000);
           
           SignUp.clickbtn2();
           
@@ -393,7 +389,7 @@ public class AgentSignUp extends BaseTest {
           //*************PAGE METHODS********************
           
           
-          SignUp.entervalues2("San Francisco", "100", "sample.com", "zillow.com", "Test Agent Flow");
+          SignUp.entervalues2("San Francisco", "", "sample.com", "zillow.com", "Test Agent Flow");
           
           
             Thread.sleep(2000);

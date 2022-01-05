@@ -261,15 +261,14 @@ public class PageAgentSignUp extends BasePage{
        
 
 
-    	 Thread.sleep(10000);
-    	 JavascriptExecutor js = ((JavascriptExecutor) driver);
-    	 js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+    	 Robot robot = new Robot();
+    	 robot.keyPress(KeyEvent.VK_CONTROL);
+    	 robot.keyPress(KeyEvent.VK_END);
+    	 robot.keyRelease(KeyEvent.VK_END);
+    	 robot.keyRelease(KeyEvent.VK_CONTROL);
          
-    	 WebDriverWait wait = new WebDriverWait(driver, 5);
-    	 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(btnxpath2)));
-    	 
-    	// WebElement number = driver.findElement(By.xpath(btnxpath2));
-        // JavascriptExecutor executor = (JavascriptExecutor) driver; executor.executeScript("arguments[0].click();", number); 
+    	 WebElement number = driver.findElement(By.xpath(btnxpath2));
+         JavascriptExecutor executor = (JavascriptExecutor) driver; executor.executeScript("arguments[0].click();", number); 
 
       
          }
