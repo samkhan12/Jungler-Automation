@@ -190,8 +190,13 @@ public class PageAgentSignUp extends BasePage{
      
      public void clickbtn3() throws InterruptedException {
 
-     	Thread.sleep(1000);
-         click(By.xpath(btnxpath3));    
+     	//Thread.sleep(1000);
+        //click(By.xpath(btnxpath3));   
+    	 
+    	 Thread.sleep(2000);
+      	WebElement check = driver.findElement(By.xpath(btnxpath3));
+         JavascriptExecutor executor = (JavascriptExecutor) driver; executor.executeScript("arguments[0].click();", check); 
+         
          
          }
      
