@@ -256,7 +256,10 @@ public class PageAgentSignUp extends BasePage{
      public void clickbtn2() throws InterruptedException {
        
 
-     	driver.findElement(By.xpath(btnxpath2)).click();
+    	 WebElement number = driver.findElement(By.name(btnxpath2));
+         JavascriptExecutor executor = (JavascriptExecutor) driver; executor.executeScript("arguments[0].click();", number); 
+        
+    
         
 
   
@@ -324,8 +327,8 @@ public class PageAgentSignUp extends BasePage{
 
   	  
 
-    	WebElement number = driver.findElement(By.name(mobile));
-        JavascriptExecutor executor = (JavascriptExecutor) driver; executor.executeScript("arguments[0].click();", number); 
+    	    WebElement number = driver.findElement(By.name(mobile));
+            JavascriptExecutor executor = (JavascriptExecutor) driver; executor.executeScript("arguments[0].click();", number); 
        
    
         	String randomNumbers = RandomStringUtils.randomNumeric(8);
