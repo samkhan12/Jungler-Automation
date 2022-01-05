@@ -15,6 +15,7 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -152,9 +153,7 @@ public class PageAgentSignUp extends BasePage{
     	WebElement check = driver.findElement(By.xpath(checkbox));
         JavascriptExecutor executor = (JavascriptExecutor) driver; executor.executeScript("arguments[0].click();", check); 
 
-        Thread.sleep(1000);
-        driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[1]/div/div/div/div/div[2]")).click();
-        Thread.sleep(2000);   
+         
     }
     
     public void clearform1() throws InterruptedException {
@@ -258,8 +257,10 @@ public class PageAgentSignUp extends BasePage{
        
 
     	 WebElement number = driver.findElement(By.xpath(btnxpath2));
+         WebDriverWait wait = new WebDriverWait(driver,60);
+         wait.until(ExpectedConditions.visibilityOf(number));
          JavascriptExecutor executor = (JavascriptExecutor) driver; executor.executeScript("arguments[0].click();", number); 
-         
+
       
          
          }

@@ -6,6 +6,7 @@ import java.awt.Robot;
 import java.awt.event.KeyEvent;
 
 import org.apache.log4j.BasicConfigurator;
+import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
@@ -366,14 +367,10 @@ public class AgentSignUp extends BaseTest {
           
           //*************PAGE METHODS********************
           
-          Dimension d = new Dimension(1382,744); 
-        //Resize the current window to the given dimension
-          driver.manage().window().setSize(d); 
+         
           Thread.sleep(1000);
           SignUp.selectown();
-          Robot robot = new Robot();
-          robot.keyPress(KeyEvent.VK_PAGE_DOWN);
-          robot.keyRelease(KeyEvent.VK_PAGE_DOWN);
+      
          
     }
 
@@ -404,6 +401,10 @@ public class AgentSignUp extends BaseTest {
             Robot robot = new Robot();
             robot.keyPress(KeyEvent.VK_PAGE_DOWN);
             robot.keyRelease(KeyEvent.VK_PAGE_DOWN);
+            
+            Thread.sleep(1000);
+            driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[1]/div/div/div/div/div[2]")).click();
+            Thread.sleep(2000);  
             
             SignUp.clickbtn2();
       	
