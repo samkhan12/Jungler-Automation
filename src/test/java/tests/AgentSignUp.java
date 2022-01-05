@@ -2,6 +2,8 @@ package tests;
 
 
 import java.awt.AWTException;
+import java.awt.Robot;
+import java.awt.event.KeyEvent;
 
 import org.apache.log4j.BasicConfigurator;
 import org.openqa.selenium.JavascriptExecutor;
@@ -243,7 +245,7 @@ public class AgentSignUp extends BaseTest {
     
     
     @Test (priority = 7, description="Verify that agent should get validation error in case of empty fields-step 2")
-   	public void TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step2() throws InterruptedException {
+   	public void TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step2() throws InterruptedException, AWTException {
    		
    		
    		BasicConfigurator.configure();
@@ -261,8 +263,10 @@ public class AgentSignUp extends BaseTest {
      
           Thread.sleep(3000);
           
-    	  JavascriptExecutor jse = (JavascriptExecutor)driver;
-       	  jse.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+          Robot robot = new Robot();
+          robot.keyPress(KeyEvent.VK_PAGE_DOWN);
+          robot.keyRelease(KeyEvent.VK_PAGE_DOWN);
+          
           SignUp.clickbtn2();
           
           Thread.sleep(3000);
@@ -388,10 +392,12 @@ public class AgentSignUp extends BaseTest {
           
           
             Thread.sleep(2000);
-      	    JavascriptExecutor jse = (JavascriptExecutor)driver;
-         	jse.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+
+            Robot robot = new Robot();
+            robot.keyPress(KeyEvent.VK_PAGE_DOWN);
+            robot.keyRelease(KeyEvent.VK_PAGE_DOWN);
       	
-          SignUp.clickbtn2();
+            SignUp.clickbtn2();
 
          
     }
