@@ -262,8 +262,9 @@ public class PageAgentSignUp extends BasePage{
          JavascriptExecutor executor = (JavascriptExecutor) driver; executor.executeScript("arguments[0].click();", number); 
 
       
-         
          }
+     
+     
      public void enteremail() throws InterruptedException {    
    
     	
