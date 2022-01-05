@@ -69,9 +69,9 @@ public class PageAgentSignUp extends BasePage{
     String zilprofiel = "//*[@id=\"root\"]/div/div[1]/div/div/div/div/div[2]/div/form/div/div[2]/div[6]/div";
     String profile2 = "//*[@id=\"root\"]/div/div[1]/div/div/div/div/div[2]/div/form/div/div[2]/div[7]/div";
     String image = "//*[@id=\"root\"]/div/div[1]/div/div/div/div/div[2]/div/form/div/div[2]/div[9]";
-    String mfnerror = "//*[@id=\"root\"]/div/div[1]/div/div/div/div/div[2]/div/div/form/div/div[2]/div[1]/div[1]/div/div";
-    String mlnerror = "//*[@id=\"root\"]/div/div[1]/div/div/div/div/div[2]/div/div/form/div/div[2]/div[1]/div[2]/div/div";
-    String memerror = "//*[@id=\"root\"]/div/div[1]/div/div/div/div/div[2]/div/div/form/div/div[2]/div[2]/div[1]";
+    String mfnerror = "//div[contains(text(),'Enter first name')]";
+    String mlnerror = "//div[contains(text(),'Enter last name')]";
+    String memerror = "//div[contains(text(),'Enter email address')]";
     String welcome3 = "thankyou-heading";
     
     
