@@ -435,7 +435,6 @@ public class AgentSignUp extends BaseTest {
           
           Thread.sleep(2000);
           SignUp.verifyStep3();
-          driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[1]/div/div/div/div/div[1]/div[2]/button")).click();
 
          
     }
