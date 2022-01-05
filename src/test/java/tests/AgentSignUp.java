@@ -6,6 +6,7 @@ import java.awt.Robot;
 import java.awt.event.KeyEvent;
 
 import org.apache.log4j.BasicConfigurator;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
@@ -364,7 +365,10 @@ public class AgentSignUp extends BaseTest {
           PageAgentSignUp SignUp = new PageAgentSignUp(driver,wait);
           
           //*************PAGE METHODS********************
-     
+          
+          Dimension d = new Dimension(1382,744); 
+        //Resize the current window to the given dimension
+          driver.manage().window().setSize(d); 
           Thread.sleep(1000);
           SignUp.selectown();
           Robot robot = new Robot();
