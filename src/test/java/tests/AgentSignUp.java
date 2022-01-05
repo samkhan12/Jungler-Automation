@@ -293,7 +293,7 @@ public class AgentSignUp extends BaseTest {
           //*************PAGE METHODS********************
      
           Thread.sleep(5000);
-          SignUp.uploadimage();
+          //SignUp.uploadimage();
           
          
     }
@@ -389,7 +389,7 @@ public class AgentSignUp extends BaseTest {
           //*************PAGE METHODS********************
           
           
-          SignUp.entervalues2("San Francisco", "", "sample.com", "zillow.com", "Test Agent Flow");
+          SignUp.entervalues2("San Francisco", "100", "sample.com", "zillow.com", "Test Agent Flow");
           
           
             Thread.sleep(2000);
