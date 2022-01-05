@@ -255,22 +255,11 @@ public class PageAgentSignUp extends BasePage{
      
      public void clickbtn2() throws InterruptedException {
        
-    	Dimension d = new Dimension(1382,744); 
-    	//Resize the current window to the given dimension
-    	driver.manage().window().setSize(d);
-    	 
-    	Thread.sleep(1000);
-    	JavascriptExecutor jse = (JavascriptExecutor)driver;
-    	jse.executeScript("window.scrollTo(0, document.body.scrollHeight);");
-    	
-    	Thread.sleep(2000);
 
-     	WebElement check = driver.findElement(By.xpath(btnxpath2));
-        JavascriptExecutor executor = (JavascriptExecutor) driver; executor.executeScript("arguments[0].click();", check); 
+     	driver.findElement(By.xpath(btnxpath2)).click();
         
 
-     	//Thread.sleep(1000);
-        // click(By.xpath(btnxpath2));    
+  
          
          }
      public void enteremail() throws InterruptedException {    

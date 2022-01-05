@@ -11,7 +11,6 @@
         <methods>
           <include name="TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step3"/>
           <include name="TC_Negative_Verify_that_Agent_Should_SignUp_Successfully_AfterStep3"/>
-          <include name="TC_Negative_Verify_that_Agent_Should_ValidateFirstForm_InCaseOfValidFields"/>
           <include name="teardown"/>
           <include name="setup"/>
         </methods>

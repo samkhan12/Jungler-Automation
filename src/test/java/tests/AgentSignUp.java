@@ -4,6 +4,7 @@ package tests;
 import java.awt.AWTException;
 
 import org.apache.log4j.BasicConfigurator;
+import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.Test;
 
 import pages.AgentSignUpHome;
@@ -259,6 +260,9 @@ public class AgentSignUp extends BaseTest {
           //*************PAGE METHODS********************
      
           Thread.sleep(3000);
+          
+    	  JavascriptExecutor jse = (JavascriptExecutor)driver;
+       	  jse.executeScript("window.scrollTo(0, document.body.scrollHeight);");
           SignUp.clickbtn2();
           
           Thread.sleep(3000);
@@ -383,7 +387,10 @@ public class AgentSignUp extends BaseTest {
           SignUp.entervalues2("San Francisco", "100", "sample.com", "zillow.com", "Test Agent Flow");
           
           
-          Thread.sleep(2000);
+            Thread.sleep(2000);
+      	    JavascriptExecutor jse = (JavascriptExecutor)driver;
+         	jse.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+      	
           SignUp.clickbtn2();
 
          
