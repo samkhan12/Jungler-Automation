@@ -81,7 +81,7 @@ public class PageAgentSignUp extends BasePage{
     String btnxpath = "//*[@id=\"gatsby-focus-wrapper\"]/div/div/div[2]/div[2]/div/div/div/button";
     String btnxpath2 = "//*[@id=\"root\"]/div/div[1]/div/div/div/div/div[2]/div/form/div/div[2]/button";
     String upload = "//*[@id=\"root\"]/div/div[1]/div/div/div/div/div[2]/div/form/div/div[2]/div[8]/div/section/div/button";
-    String btnxpath3 = "//button[contains(text(),'Next')]";
+    String btnxpath3 = "//*[@id=\"root\"]/div/div[1]/div/div/div/div/div[2]/div/div/form/div/div[2]/button";
     
     //*********Page Methods*********  
     
@@ -194,7 +194,7 @@ public class PageAgentSignUp extends BasePage{
      	//Thread.sleep(1000);
         //click(By.xpath(btnxpath3));   
     	 
-    	Thread.sleep(10000);
+    	Thread.sleep(5000);
       	WebElement check = driver.findElement(By.xpath(btnxpath3));
         JavascriptExecutor executor = (JavascriptExecutor) driver; executor.executeScript("arguments[0].click();", check); 
          
