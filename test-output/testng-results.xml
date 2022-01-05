@@ -2,72 +2,72 @@
 <testng-results ignored="1" total="15" passed="14" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-05T15:20:14 IST" name="N11 Test Suite" finished-at="2022-01-05T15:21:58 IST" duration-ms="103438">
+  <suite started-at="2022-01-05T15:54:26 IST" name="N11 Test Suite" finished-at="2022-01-05T15:56:11 IST" duration-ms="105724">
     <groups>
     </groups>
-    <test started-at="2022-01-05T15:20:14 IST" name="LoginTest" finished-at="2022-01-05T15:21:58 IST" duration-ms="103438">
+    <test started-at="2022-01-05T15:54:26 IST" name="LoginTest" finished-at="2022-01-05T15:56:11 IST" duration-ms="105724">
       <class name="tests.AgentSignUp">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T15:20:14 IST" name="setup" finished-at="2022-01-05T15:20:17 IST" duration-ms="3031" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T15:54:26 IST" name="setup" finished-at="2022-01-05T15:54:29 IST" duration-ms="2807" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields()[pri:0, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T15:20:18 IST" name="TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields" description="Verify that agent should get validation error in case of empty fields" finished-at="2022-01-05T15:20:26 IST" duration-ms="8519" status="PASS">
+        <test-method signature="TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields()[pri:0, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T15:54:29 IST" name="TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields" description="Verify that agent should get validation error in case of empty fields" finished-at="2022-01-05T15:54:37 IST" duration-ms="8732" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields -->
-        <test-method signature="TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_InvalidNumber()[pri:1, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T15:20:26 IST" name="TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_InvalidNumber" description="Verify that error get displayed when agent enter invalid number" finished-at="2022-01-05T15:20:31 IST" duration-ms="5310" status="PASS">
+        <test-method signature="TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_InvalidNumber()[pri:1, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T15:54:37 IST" name="TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_InvalidNumber" description="Verify that error get displayed when agent enter invalid number" finished-at="2022-01-05T15:54:43 IST" duration-ms="6000" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_InvalidNumber -->
-        <test-method signature="TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_InvalidEmail()[pri:2, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T15:20:31 IST" name="TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_InvalidEmail" description="Verify that error get displayed when agent enter invalid email" finished-at="2022-01-05T15:20:39 IST" duration-ms="7382" status="PASS">
+        <test-method signature="TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_InvalidEmail()[pri:2, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T15:54:43 IST" name="TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_InvalidEmail" description="Verify that error get displayed when agent enter invalid email" finished-at="2022-01-05T15:54:50 IST" duration-ms="6899" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_InvalidEmail -->
-        <test-method signature="TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_AlreadyExistUser()[pri:3, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T15:20:39 IST" name="TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_AlreadyExistUser" description="Verify that error get displayed when agent enter already exist user email" finished-at="2022-01-05T15:20:51 IST" duration-ms="12291" status="PASS">
+        <test-method signature="TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_AlreadyExistUser()[pri:3, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T15:54:50 IST" name="TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_AlreadyExistUser" description="Verify that error get displayed when agent enter already exist user email" finished-at="2022-01-05T15:55:03 IST" duration-ms="12427" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_AlreadyExistUser -->
-        <test-method signature="TC_Negative_Verify_that_Agent_ShouldNot_AbleToEnter_AlphabeticalValue_inMobileNumber_Field()[pri:4, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T15:20:51 IST" name="TC_Negative_Verify_that_Agent_ShouldNot_AbleToEnter_AlphabeticalValue_inMobileNumber_Field" description="Verify that agent not able to enter alphabetical value in mobile number field" finished-at="2022-01-05T15:20:52 IST" duration-ms="1429" status="PASS">
+        <test-method signature="TC_Negative_Verify_that_Agent_ShouldNot_AbleToEnter_AlphabeticalValue_inMobileNumber_Field()[pri:4, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T15:55:03 IST" name="TC_Negative_Verify_that_Agent_ShouldNot_AbleToEnter_AlphabeticalValue_inMobileNumber_Field" description="Verify that agent not able to enter alphabetical value in mobile number field" finished-at="2022-01-05T15:55:04 IST" duration-ms="1378" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Negative_Verify_that_Agent_ShouldNot_AbleToEnter_AlphabeticalValue_inMobileNumber_Field -->
-        <test-method signature="TC_Negative_Verify_that_Agent_Should_ValidateFirstForm_InCaseOfValidFields()[pri:5, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T15:20:52 IST" name="TC_Negative_Verify_that_Agent_Should_ValidateFirstForm_InCaseOfValidFields" description="Verify that agent should get validate first form in case of valid fields" finished-at="2022-01-05T15:21:13 IST" duration-ms="21016" status="PASS">
+        <test-method signature="TC_Negative_Verify_that_Agent_Should_ValidateFirstForm_InCaseOfValidFields()[pri:5, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T15:55:04 IST" name="TC_Negative_Verify_that_Agent_Should_ValidateFirstForm_InCaseOfValidFields" description="Verify that agent should get validate first form in case of valid fields" finished-at="2022-01-05T15:55:25 IST" duration-ms="21132" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Negative_Verify_that_Agent_Should_ValidateFirstForm_InCaseOfValidFields -->
-        <test-method signature="TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step2()[pri:7, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T15:21:13 IST" name="TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step2" description="Verify that agent should get validation error in case of empty fields-step 2" finished-at="2022-01-05T15:21:21 IST" duration-ms="7569" status="PASS">
+        <test-method signature="TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step2()[pri:7, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T15:55:25 IST" name="TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step2" description="Verify that agent should get validation error in case of empty fields-step 2" finished-at="2022-01-05T15:55:34 IST" duration-ms="8529" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step2 -->
-        <test-method signature="TC_Negative_Verify_that_Agent_ShouldbeAble_ToUpload_ImageSuccessfully()[pri:8, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T15:21:21 IST" name="TC_Negative_Verify_that_Agent_ShouldbeAble_ToUpload_ImageSuccessfully" description="Verify that agent should be able to upload image successfully" finished-at="2022-01-05T15:21:30 IST" duration-ms="9266" status="PASS">
+        <test-method signature="TC_Negative_Verify_that_Agent_ShouldbeAble_ToUpload_ImageSuccessfully()[pri:8, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T15:55:34 IST" name="TC_Negative_Verify_that_Agent_ShouldbeAble_ToUpload_ImageSuccessfully" description="Verify that agent should be able to upload image successfully" finished-at="2022-01-05T15:55:43 IST" duration-ms="9314" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Negative_Verify_that_Agent_ShouldbeAble_ToUpload_ImageSuccessfully -->
-        <test-method signature="TC_Negative_Verify_that_Agent_ShouldbeAble_ToSelect_YearSuccessfully()[pri:9, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T15:21:30 IST" name="TC_Negative_Verify_that_Agent_ShouldbeAble_ToSelect_YearSuccessfully" description="Verify that agent should be able to select year successfully" finished-at="2022-01-05T15:21:36 IST" duration-ms="5196" status="PASS">
+        <test-method signature="TC_Negative_Verify_that_Agent_ShouldbeAble_ToSelect_YearSuccessfully()[pri:9, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T15:55:43 IST" name="TC_Negative_Verify_that_Agent_ShouldbeAble_ToSelect_YearSuccessfully" description="Verify that agent should be able to select year successfully" finished-at="2022-01-05T15:55:48 IST" duration-ms="5201" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Negative_Verify_that_Agent_ShouldbeAble_ToSelect_YearSuccessfully -->
-        <test-method signature="TC_Negative_Verify_that_Agent_ShouldbeAble_ToSelect_Town_Successfully()[pri:10, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T15:21:36 IST" name="TC_Negative_Verify_that_Agent_ShouldbeAble_ToSelect_Town_Successfully" description="Verify that agent should be able to select town successfully" finished-at="2022-01-05T15:21:43 IST" duration-ms="7017" status="PASS">
+        <test-method signature="TC_Negative_Verify_that_Agent_ShouldbeAble_ToSelect_Town_Successfully()[pri:10, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T15:55:48 IST" name="TC_Negative_Verify_that_Agent_ShouldbeAble_ToSelect_Town_Successfully" description="Verify that agent should be able to select town successfully" finished-at="2022-01-05T15:55:55 IST" duration-ms="7121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Negative_Verify_that_Agent_ShouldbeAble_ToSelect_Town_Successfully -->
-        <test-method signature="TC_Negative_Verify_that_Agent_ShouldbeAble_ToSubmit_Step2_Successfully()[pri:11, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T15:21:43 IST" name="TC_Negative_Verify_that_Agent_ShouldbeAble_ToSubmit_Step2_Successfully" description="Verify that agent should be able to submit step 2 successfully" finished-at="2022-01-05T15:21:48 IST" duration-ms="5179" status="PASS">
+        <test-method signature="TC_Negative_Verify_that_Agent_ShouldbeAble_ToSubmit_Step2_Successfully()[pri:11, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T15:55:55 IST" name="TC_Negative_Verify_that_Agent_ShouldbeAble_ToSubmit_Step2_Successfully" description="Verify that agent should be able to submit step 2 successfully" finished-at="2022-01-05T15:56:01 IST" duration-ms="6072" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Negative_Verify_that_Agent_ShouldbeAble_ToSubmit_Step2_Successfully -->
-        <test-method signature="TC_Negative_Verify_that_Agent_ShouldbeAble_ToReachOn_Step3_Successfully()[pri:12, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T15:21:48 IST" name="TC_Negative_Verify_that_Agent_ShouldbeAble_ToReachOn_Step3_Successfully" description="Verify that agent should be able to reach on step 3 successfully" finished-at="2022-01-05T15:21:50 IST" duration-ms="2020" status="PASS">
+        <test-method signature="TC_Negative_Verify_that_Agent_ShouldbeAble_ToReachOn_Step3_Successfully()[pri:12, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T15:56:01 IST" name="TC_Negative_Verify_that_Agent_ShouldbeAble_ToReachOn_Step3_Successfully" description="Verify that agent should be able to reach on step 3 successfully" finished-at="2022-01-05T15:56:03 IST" duration-ms="2015" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Negative_Verify_that_Agent_ShouldbeAble_ToReachOn_Step3_Successfully -->
-        <test-method signature="TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step3()[pri:13, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T15:21:50 IST" name="TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step3" description="Verify that agent should get validation error in case of empty fields-step 3" finished-at="2022-01-05T15:21:52 IST" duration-ms="2264" status="PASS">
+        <test-method signature="TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step3()[pri:13, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T15:56:03 IST" name="TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step3" description="Verify that agent should get validation error in case of empty fields-step 3" finished-at="2022-01-05T15:56:06 IST" duration-ms="2259" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step3 -->
-        <test-method signature="TC_Negative_Verify_that_Agent_Should_SignUp_Successfully_AfterStep3()[pri:14, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T15:21:52 IST" name="TC_Negative_Verify_that_Agent_Should_SignUp_Successfully_AfterStep3" description="Verify that agent should signup successfully after step3" finished-at="2022-01-05T15:21:58 IST" duration-ms="5849" status="PASS">
+        <test-method signature="TC_Negative_Verify_that_Agent_Should_SignUp_Successfully_AfterStep3()[pri:14, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T15:56:06 IST" name="TC_Negative_Verify_that_Agent_Should_SignUp_Successfully_AfterStep3" description="Verify that agent should signup successfully after step3" finished-at="2022-01-05T15:56:11 IST" duration-ms="5732" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Negative_Verify_that_Agent_Should_SignUp_Successfully_AfterStep3 -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T15:21:58 IST" name="teardown" finished-at="2022-01-05T15:21:58 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T15:56:11 IST" name="teardown" finished-at="2022-01-05T15:56:11 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
