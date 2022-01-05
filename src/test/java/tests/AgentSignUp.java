@@ -7,6 +7,7 @@ import java.awt.event.KeyEvent;
 
 import org.apache.log4j.BasicConfigurator;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
 import pages.AgentSignUpHome;
@@ -397,7 +398,6 @@ public class AgentSignUp extends BaseTest {
             robot.keyPress(KeyEvent.VK_PAGE_DOWN);
             robot.keyRelease(KeyEvent.VK_PAGE_DOWN);
       	
-            SignUp.clickbtn2();
 
          
     }
