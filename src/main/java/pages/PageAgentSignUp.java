@@ -75,7 +75,6 @@ public class PageAgentSignUp extends BasePage{
     String mlnerror = "//div[contains(text(),'Enter last name')]";
     String memerror = "//div[contains(text(),'Enter email address')]";
     String welcome3 = "thankyou-heading";
-  //*[@id="root"]/div/div[1]/div/div/div/div/div[2]/div/div/form/div/div[2]/button
     
     //Button xpath  
         
@@ -262,11 +261,9 @@ public class PageAgentSignUp extends BasePage{
        
 
 
-    	 Robot robot = new Robot();
-    	 robot.keyPress(KeyEvent.VK_CONTROL);
-    	 robot.keyPress(KeyEvent.VK_END);
-    	 robot.keyRelease(KeyEvent.VK_END);
-    	 robot.keyRelease(KeyEvent.VK_CONTROL);
+    	 Thread.sleep(10000);
+    	 JavascriptExecutor js = ((JavascriptExecutor) driver);
+    	 js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
          
     	 WebElement number = driver.findElement(By.xpath(btnxpath2));
          JavascriptExecutor executor = (JavascriptExecutor) driver; executor.executeScript("arguments[0].click();", number); 
