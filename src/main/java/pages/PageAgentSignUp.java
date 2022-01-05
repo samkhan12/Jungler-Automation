@@ -37,7 +37,20 @@ public class PageAgentSignUp extends BasePage{
     String mobile = "phone_mobile";
     String firmname = "firm_name";
     String selectcity = "//*[@id=\"gatsby-focus-wrapper\"]/div/div/div[2]/div[2]/div/div/div/div[4]/select";
+    String city2 = "city_live";
+    String year = "year_in_real_estate";
+    String town2 = "//*[@id=\"root\"]/div/div[1]/div/div/div/div/div[2]/div/form/div/div[2]/div[3]/div/div/button";
+    String buysales = "buy_side_sales";
+    String business = "business_profile";
+    String zilli = "zillow_profile";
+    String bio2 = "bio";
+    String checkbox = "//*[contains(text(),'Aberdeen Township')]";
+    String managerfn = "broker_first_name";
+    String managerln = "broker_last_name";
+    String brokermail = "broker_email";
     
+    
+     
     //Messages xpath
     
     String fnamerror = "//*[@id=\"gatsby-focus-wrapper\"]/div/div/div[2]/div[2]/div/div/div/div[1]/div[1]/div/span";
@@ -56,12 +69,18 @@ public class PageAgentSignUp extends BasePage{
     String zilprofiel = "//*[@id=\"root\"]/div/div[1]/div/div/div/div/div[2]/div/form/div/div[2]/div[6]/div";
     String profile2 = "//*[@id=\"root\"]/div/div[1]/div/div/div/div/div[2]/div/form/div/div[2]/div[7]/div";
     String image = "//*[@id=\"root\"]/div/div[1]/div/div/div/div/div[2]/div/form/div/div[2]/div[9]";
+    String mfnerror = "//*[@id=\"root\"]/div/div[1]/div/div/div/div/div[2]/div/div/form/div/div[2]/div[1]/div[1]/div/div";
+    String mlnerror = "//*[@id=\"root\"]/div/div[1]/div/div/div/div/div[2]/div/div/form/div/div[2]/div[1]/div[2]/div/div";
+    String memerror = "//*[@id=\"root\"]/div/div[1]/div/div/div/div/div[2]/div/div/form/div/div[2]/div[2]/div[1]";
+    String welcome3 = "thankyou-heading";
+    
     
     //Button xpath  
         
     String btnxpath = "//*[@id=\"gatsby-focus-wrapper\"]/div/div/div[2]/div[2]/div/div/div/button";
     String btnxpath2 = "//*[@id=\"root\"]/div/div[1]/div/div/div/div/div[2]/div/form/div/div[2]/button";
     String upload = "//*[@id=\"root\"]/div/div[1]/div/div/div/div/div[2]/div/form/div/div[2]/div[8]/div/section/div/button";
+    String btnxpath3 = "//*[@id=\"root\"]/div/div[1]/div/div/div/div/div[2]/div/div/form/div/div[2]/button";
     
     //*********Page Methods*********  
     
@@ -87,9 +106,59 @@ public class PageAgentSignUp extends BasePage{
     
     
     
+    public void entervalues2(String cit,String sales, String prof, String zil, String biod) throws InterruptedException {
+
+    	Thread.sleep(1000);
+        writeText(By.name(city2),cit);
+        writeText(By.name(buysales),sales);
+        writeText(By.name(business),prof);
+        writeText(By.name(zilli),zil);
+        writeText(By.name(bio2),biod);
+
+    
+        }
+    
+    
+    public void entervalues3(String text1,String text2) throws InterruptedException {
+
+    	Thread.sleep(1000);
+        writeText(By.name(managerfn),text1);
+        writeText(By.name(managerln),text2);
+    
+    
+        }
+    
+    
+    public void selectyear() throws InterruptedException {
+    	
+        
+        
+    	WebElement year_dropdown = driver.findElement(By.name(year));
+        Select budget = new Select(year_dropdown);
+        budget.selectByIndex(1);
+        
+   
+    }
+    
+    
+    public void selectown() throws InterruptedException {
+    	
+        Thread.sleep(3000);
+    	driver.findElement(By.xpath(town2)).click();
+    	
+    	
+    	Thread.sleep(2000);
+    	WebElement check = driver.findElement(By.xpath(checkbox));
+        JavascriptExecutor executor = (JavascriptExecutor) driver; executor.executeScript("arguments[0].click();", check); 
+       
+        driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[1]/div/div/div/div/div[2]")).click();    	
+   
+    }
+    
     public void clearform1() throws InterruptedException {
 
     	Thread.sleep(1000);
+    	
     	driver.findElement(By.name(fname)).clear();
     	driver.findElement(By.name(lname)).clear();
     	driver.findElement(By.name(firmname)).clear();
@@ -119,6 +188,14 @@ public class PageAgentSignUp extends BasePage{
         }
      
      
+     public void clickbtn3() throws InterruptedException {
+
+     	Thread.sleep(1000);
+         click(By.xpath(btnxpath3));    
+         
+         }
+     
+          
      public void uploadimage() throws InterruptedException, AWTException {
     	 
     	 
@@ -135,7 +212,7 @@ public class PageAgentSignUp extends BasePage{
     	     Robot rb = new Robot();
     	 
     	    // copying File path to Clipboard
-    	     StringSelection str = new StringSelection("C:\\Users\\khans\\file_example_PNG_3MB.png");
+    	     StringSelection str = new StringSelection("C:\\Users\\khans\\sample.jpg");
     	     Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
     	 
     	     // press Contol+V for pasting
@@ -153,17 +230,20 @@ public class PageAgentSignUp extends BasePage{
     	     
     	   }
     	  
-    	/*
-    	   JavascriptExecutor js = (JavascriptExecutor)driver; //Scrolling using JavascriptExecutor
-    	   js.executeScript("window.scrollBy(0,380)");//Scroll Down to file upload button (+ve)
-    	   Thread.sleep(2000);       	
-     	   WebElement upload1 = driver.findElement(By.xpath(upload));
-     	   Thread.sleep(2000);
-     	   upload1.click();
-           //JavascriptExecutor executor = (JavascriptExecutor) driver; executor.executeScript("arguments[0].click();", upload1); 
-    	   Thread.sleep(5000);
-    	   upload1.sendKeys("C:\\Users\\khans\\file_example_PNG_3MB.png");
-    	  */   
+     
+     public void verifyimage() throws InterruptedException {
+
+      
+         Thread.sleep(2000);
+         WebElement i = driver.findElement(By.className("form-group dropzone-image"));
+
+         Boolean p = (Boolean) ((JavascriptExecutor)driver)
+         .executeScript("return arguments[0].complete "
+         + "&& typeof arguments[0].naturalWidth != \"undefined\" "
+         + "&& arguments[0].naturalWidth > 0", i);
+    
+         }
+      
          
          
      
@@ -179,13 +259,16 @@ public class PageAgentSignUp extends BasePage{
         	WebElement email = driver.findElement(By.name(emailvalue));
         	email.click();  
         	Random randomGenerator = new Random();  
-        	int randomInt = randomGenerator.nextInt(1000);  
-        	email.sendKeys("username"+ randomInt +"@gmail.com");	
+        	int randomInt = randomGenerator.nextInt(1000);
+        	
+        	Random randomGenerator1 = new Random();  
+        	int randomInt1 = randomGenerator1.nextInt(1000);  
+        	email.sendKeys("username"+ randomInt1 + randomInt + "@gmail.com");	
         	
         
         }
     
-    
+     
      public void enterinvalidemail() throws InterruptedException {    
     	   
     	
@@ -196,9 +279,27 @@ public class PageAgentSignUp extends BasePage{
     	email.sendKeys("username"+ randomInt +"@@gmail.com");	
     	
     
-    }
-    
-    
+       }
+     
+     
+     public void entermail2() throws InterruptedException {    
+    	   
+     	
+     	WebElement email = driver.findElement(By.name(brokermail));
+     	email.click();  
+     	Random randomGenerator = new Random();  
+     	int randomInt = randomGenerator.nextInt(1000);  
+     	
+
+    	Random randomGenerator1 = new Random();  
+    	int randomInt1 = randomGenerator1.nextInt(1000);  
+    	email.sendKeys("username"+ randomInt1 + randomInt + "@gmail.com");	
+    	
+     	
+     
+     }
+     
+         
      public void enteruseremail(String existuser1) throws InterruptedException {
 
     	Thread.sleep(1000);
@@ -217,20 +318,12 @@ public class PageAgentSignUp extends BasePage{
     	WebElement number = driver.findElement(By.name(mobile));
         JavascriptExecutor executor = (JavascriptExecutor) driver; executor.executeScript("arguments[0].click();", number); 
        
-        //	WebElement number = driver.findElement(By.name(mobile));
-        //	number.click(); 
-        	String randomNumbers = RandomStringUtils.randomNumeric(5);
-        	String phNo = 83456+randomNumbers;
+   
+        	String randomNumbers = RandomStringUtils.randomNumeric(8);
+        	String phNo = 83+randomNumbers;
         	number.sendKeys(phNo);
         			
-       		/* 	
-        	WebElement email = driver.findElement(By.name(mobile));
-        	email.click();  
-        	Random randomGenerator = new Random();  
-        	int randomInt = randomGenerator.nextInt(1000);
-        	email.sendKeys("98"+ randomInt + "986" + randomInt);	
-         }
-           */
+       	
         
         }
     	
@@ -295,6 +388,19 @@ public class PageAgentSignUp extends BasePage{
  	assertEquals(expectedTitle,actualTitle);   
  	
    }
+   
+   
+   
+   public void verifyStep3() {
+
+	 
+	    
+ 	String actualTitle = driver.getTitle();
+ 	String expectedTitle = "Suburban Jungler";
+ 	assertEquals(expectedTitle,actualTitle);   
+ 	
+   }
+
 
 
    public void verifyErrors(String expectedText, String expectedText1, String expectedText2, String expectedText3, String expectedText4, String expectedText5 )
@@ -327,6 +433,20 @@ public class PageAgentSignUp extends BasePage{
 
 
  }
+   
+   
+   public void verifyErrors3(String expectedText, String expectedText1, String expectedText2)
+   
+   
+   {
+  	  Assert.assertEquals(readText(By.xpath(mfnerror)), expectedText);
+  	  Assert.assertEquals(readText(By.xpath(mlnerror)), expectedText1);
+  	  Assert.assertEquals(readText(By.xpath(memerror)), expectedText2);
+  
+
+
+
+   }
  
  
    public void verifyInvalidNumber(String expectedText )
@@ -363,5 +483,15 @@ public class PageAgentSignUp extends BasePage{
 
  
  }
+   
+   
+   public void verifyForm3(String expectedText)
+   
+   
+   {
+  	  Assert.assertEquals(readText(By.className(welcome3)), expectedText);
+
+   
+   }
  
 }

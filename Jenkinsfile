@@ -8,7 +8,7 @@ pipeline {
              bat '''
                 echo 'Multiline'
                 echo 'Example'
-             '''
+             ''
              echo ''not using shell''
           }
        }

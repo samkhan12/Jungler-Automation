@@ -285,11 +285,199 @@ public class AgentSignUp extends BaseTest {
           
           //*************PAGE METHODS********************
      
-          Thread.sleep(1000);
+          Thread.sleep(5000);
           SignUp.uploadimage();
           
          
     }
+    
+    
+    @Test (enabled = false , description="Verify that agent should be able to upload valid image successfully")
+   	public void TC_Negative_Verify_that_Agent_ShouldbeAble_ToUpload_ValidImageSuccessfully() throws InterruptedException, AWTException {
+   		
+   		
+   		BasicConfigurator.configure();
+   	    
+
+          //ExtentReports Description
+          ExtentTestManager.getTest().setDescription("Verify that agent should be able to upload valid image successfully");
+          
+          //*************PAGE INSTANTIATIONS*************
+          AgentSignUpHome homePage = new AgentSignUpHome(driver,wait);
+
+          PageAgentSignUp SignUp = new PageAgentSignUp(driver,wait);
+          
+          //*************PAGE METHODS********************
+     
+          Thread.sleep(5000);
+          SignUp.verifyimage();
+          
+         
+    }
+    
+    
+    @Test (priority = 9 , description="Verify that agent should be able to select year successfully")
+   	public void TC_Negative_Verify_that_Agent_ShouldbeAble_ToSelect_YearSuccessfully() throws InterruptedException, AWTException {
+   		
+   		
+   		BasicConfigurator.configure();
+   	    
+
+          //ExtentReports Description
+          ExtentTestManager.getTest().setDescription("Verify that agent should be able to select year successfully");
+          
+          //*************PAGE INSTANTIATIONS*************
+          AgentSignUpHome homePage = new AgentSignUpHome(driver,wait);
+
+          PageAgentSignUp SignUp = new PageAgentSignUp(driver,wait);
+          
+          //*************PAGE METHODS********************
+     
+          Thread.sleep(5000);
+          SignUp.selectyear();     
+         
+    }
+    
+    
+    @Test (priority = 10 , description="Verify that agent should be able to select town successfully")
+   	public void TC_Negative_Verify_that_Agent_ShouldbeAble_ToSelect_Town_Successfully() throws InterruptedException, AWTException {
+   		
+   		
+   		BasicConfigurator.configure();
+   	    
+
+          //ExtentReports Description
+          ExtentTestManager.getTest().setDescription("Verify that agent should be able to select town successfully");
+          
+          //*************PAGE INSTANTIATIONS*************
+          AgentSignUpHome homePage = new AgentSignUpHome(driver,wait);
+
+          PageAgentSignUp SignUp = new PageAgentSignUp(driver,wait);
+          
+          //*************PAGE METHODS********************
+     
+          Thread.sleep(1000);
+          SignUp.selectown();
+         
+    }
+
+    
+    @Test (priority = 11 , description="Verify that agent should be able to submit step 2 successfully")
+   	public void TC_Negative_Verify_that_Agent_ShouldbeAble_ToSubmit_Step2_Successfully() throws InterruptedException, AWTException {
+   		
+   		
+   		  BasicConfigurator.configure();
+   	    
+
+          //ExtentReports Description
+          ExtentTestManager.getTest().setDescription("Verify that agent should be able to submit step 2 successfully");
+          
+          //*************PAGE INSTANTIATIONS*************
+          AgentSignUpHome homePage = new AgentSignUpHome(driver,wait);
+
+          PageAgentSignUp SignUp = new PageAgentSignUp(driver,wait);
+          
+          //*************PAGE METHODS********************
+          
+          
+          SignUp.entervalues2("San Francisco", "100", "sample.com", "zillow.com", "Test Agent Flow");
+          
+          
+          Thread.sleep(2000);
+          SignUp.clickbtn2();
+
+         
+    }
+
+
+    @Test (priority = 12 , description="Verify that agent should be able to reach on step 3 successfully")
+   	public void TC_Negative_Verify_that_Agent_ShouldbeAble_ToReachOn_Step3_Successfully() throws InterruptedException, AWTException {
+   		
+   		
+   		  BasicConfigurator.configure();
+   	    
+
+          //ExtentReports Description
+          ExtentTestManager.getTest().setDescription("Verify that agent should be able to reach on step 3 successfully");
+          
+          //*************PAGE INSTANTIATIONS*************
+          AgentSignUpHome homePage = new AgentSignUpHome(driver,wait);
+
+          PageAgentSignUp SignUp = new PageAgentSignUp(driver,wait);
+          
+          //*************PAGE METHODS********************
+          
+          
+          Thread.sleep(2000);
+          SignUp.verifyStep3();
+
+         
+    }
+    
+    
+    @Test (priority = 13 , description="Verify that agent should get validation error in case of empty fields-step 3")
+   	public void TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step3() throws InterruptedException, AWTException {
+   		
+   		
+   		  BasicConfigurator.configure();
+   	    
+
+          //ExtentReports Description
+          ExtentTestManager.getTest().setDescription("Verify that agent should get validation error in case of empty fields-step 3");
+          
+          //*************PAGE INSTANTIATIONS*************
+          AgentSignUpHome homePage = new AgentSignUpHome(driver,wait);
+
+          PageAgentSignUp SignUp = new PageAgentSignUp(driver,wait);
+          
+          //*************PAGE METHODS********************
+          
+          
+          Thread.sleep(1000);
+          SignUp.clickbtn3();
+                    
+          SignUp.verifyErrors3("Enter first name", "Enter last name", "Enter email address");
+
+         
+    }
+    
+    
+    @Test (priority = 14 , description="Verify that agent should signup successfully after step3")
+   	public void TC_Negative_Verify_that_Agent_Should_SignUp_Successfully_AfterStep3() throws InterruptedException, AWTException {
+   		
+   		
+   		  BasicConfigurator.configure();
+   	    
+
+          //ExtentReports Description
+          ExtentTestManager.getTest().setDescription("Verify that agent should signup successfully after step3");
+          
+          //*************PAGE INSTANTIATIONS*************
+          AgentSignUpHome homePage = new AgentSignUpHome(driver,wait);
+
+          PageAgentSignUp SignUp = new PageAgentSignUp(driver,wait);
+          
+          //*************PAGE METHODS********************
+          
+          
+          Thread.sleep(1000);
+          
+          SignUp.entervalues3("FirstName", "LastName");
+          SignUp.entermail2();
+          SignUp.clickbtn3();
+          
+          //*************ASSERTIONS***********************
+          
+          Thread.sleep(2000);
+          SignUp.verifyForm3("Thank you!");
+           
+         
+    }
+
+
+    
+    
+
 
 
 
