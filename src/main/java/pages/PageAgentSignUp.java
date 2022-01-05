@@ -7,6 +7,7 @@ import java.awt.Robot;
 import java.awt.Toolkit;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
+import java.io.File;
 import java.util.Random;
 
 import org.apache.commons.lang3.RandomStringUtils;
@@ -212,28 +213,24 @@ public class PageAgentSignUp extends BasePage{
     	    JavascriptExecutor js = (JavascriptExecutor)driver; // Scroll operation using Js Executor
     	    js.executeScript("window.scrollBy(0,250)"); // Scroll Down(+ve) upto browse option
     	    Thread.sleep(2000); // suspending execution for specified time period
-    	 
+    	     
     	     WebElement browse = driver.findElement(By.xpath(upload));
     	     // using linkText, to click on browse element 
-    	     browse.click(); // Click on browse option on the webpage
-    	     Thread.sleep(2000); // suspending execution for specified time period
+    	    // browse.click(); // Click on browse option on the webpage
+    	    // Thread.sleep(2000); // suspending execution for specified time period
     	 
-    	    // creating object of Robot class
     	     Robot rb = new Robot();
     	 
-    	    // copying File path to Clipboard
-    	     StringSelection str = new StringSelection("C:\\Users\\khans\\sample.jpg");
-    	     Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
+    	     String image = new File("src\\main\\java\\pages\\sample.jpg").getAbsolutePath();
+    	     Thread.sleep(2000);
+    	     browse.sendKeys(image);
     	 
-    	     // press Contol+V for pasting
     	     rb.keyPress(KeyEvent.VK_CONTROL);
     	     rb.keyPress(KeyEvent.VK_V);
     	 
-    	    // release Contol+V for pasting
     	     rb.keyRelease(KeyEvent.VK_CONTROL);
     	     rb.keyRelease(KeyEvent.VK_V);
     	 
-    	    // for pressing and releasing Enter
     	     rb.keyPress(KeyEvent.VK_ENTER);
     	     rb.keyRelease(KeyEvent.VK_ENTER);
     	     

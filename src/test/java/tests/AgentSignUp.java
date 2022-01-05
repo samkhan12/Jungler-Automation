@@ -293,7 +293,7 @@ public class AgentSignUp extends BaseTest {
           //*************PAGE METHODS********************
      
           Thread.sleep(5000);
-          //SignUp.uploadimage();
+          SignUp.uploadimage();
           
          
     }
