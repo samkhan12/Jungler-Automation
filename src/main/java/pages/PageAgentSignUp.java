@@ -143,14 +143,14 @@ public class PageAgentSignUp extends BasePage{
     
     public void selectown() throws InterruptedException {
     	
-        Thread.sleep(3000);
+        Thread.sleep(2000);
     	driver.findElement(By.xpath(town2)).click();
     	
     	
     	Thread.sleep(2000);
     	WebElement check = driver.findElement(By.xpath(checkbox));
         JavascriptExecutor executor = (JavascriptExecutor) driver; executor.executeScript("arguments[0].click();", check); 
-       
+
         driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[1]/div/div/div/div/div[2]")).click();    	
    
     }
@@ -255,7 +255,12 @@ public class PageAgentSignUp extends BasePage{
      public void clickbtn2() throws InterruptedException {
     	 
     	 
+    	Thread.sleep(1000);
+    	JavascriptExecutor jse = (JavascriptExecutor)driver;
+    	jse.executeScript("window.scrollBy(0,500)");
+    	
     	Thread.sleep(2000);
+
      	WebElement check = driver.findElement(By.xpath(btnxpath2));
         JavascriptExecutor executor = (JavascriptExecutor) driver; executor.executeScript("arguments[0].click();", check); 
         
