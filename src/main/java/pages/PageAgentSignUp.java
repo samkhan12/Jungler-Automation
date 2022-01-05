@@ -256,7 +256,7 @@ public class PageAgentSignUp extends BasePage{
      public void clickbtn2() throws InterruptedException {
        
 
-    	 WebElement number = driver.findElement(By.name(btnxpath2));
+    	 WebElement number = driver.findElement(By.xpath(btnxpath2));
          JavascriptExecutor executor = (JavascriptExecutor) driver; executor.executeScript("arguments[0].click();", number); 
         
     
