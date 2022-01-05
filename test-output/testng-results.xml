@@ -1,73 +1,286 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="15" passed="14" failed="0" skipped="0">
+<testng-results ignored="1" total="15" passed="11" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-05T16:51:20 IST" name="N11 Test Suite" finished-at="2022-01-05T16:53:46 IST" duration-ms="146114">
+  <suite started-at="2022-01-05T17:18:53 IST" name="N11 Test Suite" finished-at="2022-01-05T17:20:52 IST" duration-ms="119079">
     <groups>
     </groups>
-    <test started-at="2022-01-05T16:51:20 IST" name="LoginTest" finished-at="2022-01-05T16:53:46 IST" duration-ms="146114">
+    <test started-at="2022-01-05T17:18:53 IST" name="LoginTest" finished-at="2022-01-05T17:20:52 IST" duration-ms="119079">
       <class name="tests.AgentSignUp">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T16:51:20 IST" name="setup" finished-at="2022-01-05T16:51:23 IST" duration-ms="3282" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T17:18:53 IST" name="setup" finished-at="2022-01-05T17:18:58 IST" duration-ms="4359" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields()[pri:0, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T16:51:23 IST" name="TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields" description="Verify that agent should get validation error in case of empty fields" finished-at="2022-01-05T16:51:34 IST" duration-ms="10801" status="PASS">
+        <test-method signature="TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields()[pri:0, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T17:18:58 IST" name="TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields" description="Verify that agent should get validation error in case of empty fields" finished-at="2022-01-05T17:19:10 IST" duration-ms="11986" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields -->
-        <test-method signature="TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_InvalidNumber()[pri:1, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T16:51:34 IST" name="TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_InvalidNumber" description="Verify that error get displayed when agent enter invalid number" finished-at="2022-01-05T16:51:46 IST" duration-ms="11811" status="PASS">
+        <test-method signature="TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_InvalidNumber()[pri:1, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T17:19:10 IST" name="TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_InvalidNumber" description="Verify that error get displayed when agent enter invalid number" finished-at="2022-01-05T17:19:15 IST" duration-ms="5658" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_InvalidNumber -->
-        <test-method signature="TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_InvalidEmail()[pri:2, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T16:51:46 IST" name="TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_InvalidEmail" description="Verify that error get displayed when agent enter invalid email" finished-at="2022-01-05T16:51:53 IST" duration-ms="6980" status="PASS">
+        <test-method signature="TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_InvalidEmail()[pri:2, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T17:19:15 IST" name="TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_InvalidEmail" description="Verify that error get displayed when agent enter invalid email" finished-at="2022-01-05T17:19:22 IST" duration-ms="6794" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_InvalidEmail -->
-        <test-method signature="TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_AlreadyExistUser()[pri:3, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T16:51:53 IST" name="TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_AlreadyExistUser" description="Verify that error get displayed when agent enter already exist user email" finished-at="2022-01-05T16:52:05 IST" duration-ms="12379" status="PASS">
+        <test-method signature="TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_AlreadyExistUser()[pri:3, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T17:19:22 IST" name="TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_AlreadyExistUser" description="Verify that error get displayed when agent enter already exist user email" finished-at="2022-01-05T17:19:34 IST" duration-ms="12368" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Negative_Verify_that_Agent_Should_GetError_OnEnter_AlreadyExistUser -->
-        <test-method signature="TC_Negative_Verify_that_Agent_ShouldNot_AbleToEnter_AlphabeticalValue_inMobileNumber_Field()[pri:4, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T16:52:05 IST" name="TC_Negative_Verify_that_Agent_ShouldNot_AbleToEnter_AlphabeticalValue_inMobileNumber_Field" description="Verify that agent not able to enter alphabetical value in mobile number field" finished-at="2022-01-05T16:52:07 IST" duration-ms="1501" status="PASS">
+        <test-method signature="TC_Negative_Verify_that_Agent_ShouldNot_AbleToEnter_AlphabeticalValue_inMobileNumber_Field()[pri:4, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T17:19:34 IST" name="TC_Negative_Verify_that_Agent_ShouldNot_AbleToEnter_AlphabeticalValue_inMobileNumber_Field" description="Verify that agent not able to enter alphabetical value in mobile number field" finished-at="2022-01-05T17:19:36 IST" duration-ms="1555" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Negative_Verify_that_Agent_ShouldNot_AbleToEnter_AlphabeticalValue_inMobileNumber_Field -->
-        <test-method signature="TC_Negative_Verify_that_Agent_Should_ValidateFirstForm_InCaseOfValidFields()[pri:5, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T16:52:07 IST" name="TC_Negative_Verify_that_Agent_Should_ValidateFirstForm_InCaseOfValidFields" description="Verify that agent should get validate first form in case of valid fields" finished-at="2022-01-05T16:52:41 IST" duration-ms="33963" status="PASS">
+        <test-method signature="TC_Negative_Verify_that_Agent_Should_ValidateFirstForm_InCaseOfValidFields()[pri:5, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T17:19:36 IST" name="TC_Negative_Verify_that_Agent_Should_ValidateFirstForm_InCaseOfValidFields" description="Verify that agent should get validate first form in case of valid fields" finished-at="2022-01-05T17:19:58 IST" duration-ms="21694" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="root"]/div/div[1]/div/div/div/div/div[2]/div/form/div/div[1]/h5"}
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-RQ3L8BF', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.18 (b8887b3d1742a..., userDataDir: C:\Users\khans\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52818}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b772d4708ae6393135bae2d3a7b6eb09
+*** Element info: {Using=xpath, value=//*[@id="root"]/div/div[1]/div/div/div/div/div[2]/div/form/div/div[1]/h5}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="root"]/div/div[1]/div/div/div/div/div[2]/div/form/div/div[1]/h5"}
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-RQ3L8BF', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.18 (b8887b3d1742a..., userDataDir: C:\Users\khans\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52818}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b772d4708ae6393135bae2d3a7b6eb09
+*** Element info: {Using=xpath, value=//*[@id="root"]/div/div[1]/div/div/div/div/div[2]/div/form/div/div[1]/h5}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at pages.BasePage.readText(BasePage.java:29)
+at pages.PageAgentSignUp.verifyForm2(PageAgentSignUp.java:498)
+at tests.AgentSignUp.TC_Negative_Verify_that_Agent_Should_ValidateFirstForm_InCaseOfValidFields(AgentSignUp.java:82)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Negative_Verify_that_Agent_Should_ValidateFirstForm_InCaseOfValidFields -->
-        <test-method signature="TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step2()[pri:7, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T16:52:41 IST" name="TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step2" description="Verify that agent should get validation error in case of empty fields-step 2" finished-at="2022-01-05T16:52:50 IST" duration-ms="9558" status="PASS">
+        <test-method signature="TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step2()[pri:7, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T17:19:58 IST" name="TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step2" description="Verify that agent should get validation error in case of empty fields-step 2" finished-at="2022-01-05T17:20:08 IST" duration-ms="9586" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step2 -->
-        <test-method signature="TC_Negative_Verify_that_Agent_ShouldbeAble_ToUpload_ImageSuccessfully()[pri:8, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T16:52:50 IST" name="TC_Negative_Verify_that_Agent_ShouldbeAble_ToUpload_ImageSuccessfully" description="Verify that agent should be able to upload image successfully" finished-at="2022-01-05T16:53:00 IST" duration-ms="9286" status="PASS">
+        <test-method signature="TC_Negative_Verify_that_Agent_ShouldbeAble_ToUpload_ImageSuccessfully()[pri:8, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T17:20:08 IST" name="TC_Negative_Verify_that_Agent_ShouldbeAble_ToUpload_ImageSuccessfully" description="Verify that agent should be able to upload image successfully" finished-at="2022-01-05T17:20:17 IST" duration-ms="9326" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Negative_Verify_that_Agent_ShouldbeAble_ToUpload_ImageSuccessfully -->
-        <test-method signature="TC_Negative_Verify_that_Agent_ShouldbeAble_ToSelect_YearSuccessfully()[pri:9, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T16:53:00 IST" name="TC_Negative_Verify_that_Agent_ShouldbeAble_ToSelect_YearSuccessfully" description="Verify that agent should be able to select year successfully" finished-at="2022-01-05T16:53:05 IST" duration-ms="5200" status="PASS">
+        <test-method signature="TC_Negative_Verify_that_Agent_ShouldbeAble_ToSelect_YearSuccessfully()[pri:9, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T17:20:17 IST" name="TC_Negative_Verify_that_Agent_ShouldbeAble_ToSelect_YearSuccessfully" description="Verify that agent should be able to select year successfully" finished-at="2022-01-05T17:20:22 IST" duration-ms="5202" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Negative_Verify_that_Agent_ShouldbeAble_ToSelect_YearSuccessfully -->
-        <test-method signature="TC_Negative_Verify_that_Agent_ShouldbeAble_ToSelect_Town_Successfully()[pri:10, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T16:53:05 IST" name="TC_Negative_Verify_that_Agent_ShouldbeAble_ToSelect_Town_Successfully" description="Verify that agent should be able to select town successfully" finished-at="2022-01-05T16:53:11 IST" duration-ms="5996" status="PASS">
+        <test-method signature="TC_Negative_Verify_that_Agent_ShouldbeAble_ToSelect_Town_Successfully()[pri:10, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T17:20:22 IST" name="TC_Negative_Verify_that_Agent_ShouldbeAble_ToSelect_Town_Successfully" description="Verify that agent should be able to select town successfully" finished-at="2022-01-05T17:20:29 IST" duration-ms="7022" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Negative_Verify_that_Agent_ShouldbeAble_ToSelect_Town_Successfully -->
-        <test-method signature="TC_Negative_Verify_that_Agent_ShouldbeAble_ToSubmit_Step2_Successfully()[pri:11, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T16:53:11 IST" name="TC_Negative_Verify_that_Agent_ShouldbeAble_ToSubmit_Step2_Successfully" description="Verify that agent should be able to submit step 2 successfully" finished-at="2022-01-05T16:53:18 IST" duration-ms="7165" status="PASS">
+        <test-method signature="TC_Negative_Verify_that_Agent_ShouldbeAble_ToSubmit_Step2_Successfully()[pri:11, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T17:20:29 IST" name="TC_Negative_Verify_that_Agent_ShouldbeAble_ToSubmit_Step2_Successfully" description="Verify that agent should be able to submit step 2 successfully" finished-at="2022-01-05T17:20:36 IST" duration-ms="7305" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Negative_Verify_that_Agent_ShouldbeAble_ToSubmit_Step2_Successfully -->
-        <test-method signature="TC_Negative_Verify_that_Agent_ShouldbeAble_ToReachOn_Step3_Successfully()[pri:12, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T16:53:18 IST" name="TC_Negative_Verify_that_Agent_ShouldbeAble_ToReachOn_Step3_Successfully" description="Verify that agent should be able to reach on step 3 successfully" finished-at="2022-01-05T16:53:20 IST" duration-ms="2018" status="PASS">
+        <test-method signature="TC_Negative_Verify_that_Agent_ShouldbeAble_ToReachOn_Step3_Successfully()[pri:12, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T17:20:36 IST" name="TC_Negative_Verify_that_Agent_ShouldbeAble_ToReachOn_Step3_Successfully" description="Verify that agent should be able to reach on step 3 successfully" finished-at="2022-01-05T17:20:38 IST" duration-ms="2020" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Negative_Verify_that_Agent_ShouldbeAble_ToReachOn_Step3_Successfully -->
-        <test-method signature="TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step3()[pri:13, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T16:53:20 IST" name="TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step3" description="Verify that agent should get validation error in case of empty fields-step 3" finished-at="2022-01-05T16:53:31 IST" duration-ms="11229" status="PASS">
+        <test-method signature="TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step3()[pri:13, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T17:20:38 IST" name="TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step3" description="Verify that agent should get validation error in case of empty fields-step 3" finished-at="2022-01-05T17:20:50 IST" duration-ms="11087" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Enter first name')]"}
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-RQ3L8BF', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.18 (b8887b3d1742a..., userDataDir: C:\Users\khans\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52818}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b772d4708ae6393135bae2d3a7b6eb09
+*** Element info: {Using=xpath, value=//div[contains(text(),'Enter first name')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Enter first name')]"}
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-RQ3L8BF', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.18 (b8887b3d1742a..., userDataDir: C:\Users\khans\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52818}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b772d4708ae6393135bae2d3a7b6eb09
+*** Element info: {Using=xpath, value=//div[contains(text(),'Enter first name')]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at pages.BasePage.readText(BasePage.java:29)
+at pages.PageAgentSignUp.verifyErrors3(PageAgentSignUp.java:458)
+at tests.AgentSignUp.TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step3(AgentSignUp.java:439)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step3 -->
-        <test-method signature="TC_Negative_Verify_that_Agent_Should_SignUp_Successfully_AfterStep3()[pri:14, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T16:53:31 IST" name="TC_Negative_Verify_that_Agent_Should_SignUp_Successfully_AfterStep3" description="Verify that agent should signup successfully after step3" finished-at="2022-01-05T16:53:46 IST" duration-ms="14790" status="PASS">
+        <test-method signature="TC_Negative_Verify_that_Agent_Should_SignUp_Successfully_AfterStep3()[pri:14, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T17:20:50 IST" name="TC_Negative_Verify_that_Agent_Should_SignUp_Successfully_AfterStep3" description="Verify that agent should signup successfully after step3" finished-at="2022-01-05T17:20:52 IST" duration-ms="2067" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='broker_first_name']"}
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-RQ3L8BF', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.18 (b8887b3d1742a..., userDataDir: C:\Users\khans\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52818}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b772d4708ae6393135bae2d3a7b6eb09
+*** Element info: {Using=name, value=broker_first_name}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='broker_first_name']"}
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-RQ3L8BF', ip: '192.168.1.5', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.18 (b8887b3d1742a..., userDataDir: C:\Users\khans\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:52818}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b772d4708ae6393135bae2d3a7b6eb09
+*** Element info: {Using=name, value=broker_first_name}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+at org.openqa.selenium.By$ByName.findElement(By.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at pages.BasePage.writeText(BasePage.java:24)
+at pages.PageAgentSignUp.entervalues3(PageAgentSignUp.java:125)
+at tests.AgentSignUp.TC_Negative_Verify_that_Agent_Should_SignUp_Successfully_AfterStep3(AgentSignUp.java:465)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Negative_Verify_that_Agent_Should_SignUp_Successfully_AfterStep3 -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T16:53:46 IST" name="teardown" finished-at="2022-01-05T16:53:46 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.AgentSignUp@351d00c0]" started-at="2022-01-05T17:20:52 IST" name="teardown" finished-at="2022-01-05T17:20:52 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

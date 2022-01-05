@@ -11,6 +11,7 @@ import java.util.Random;
 
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -253,11 +254,14 @@ public class PageAgentSignUp extends BasePage{
          
      
      public void clickbtn2() throws InterruptedException {
-    	 
+       
+    	Dimension d = new Dimension(1382,744); 
+    	//Resize the current window to the given dimension
+    	driver.manage().window().setSize(d);
     	 
     	Thread.sleep(1000);
     	JavascriptExecutor jse = (JavascriptExecutor)driver;
-    	jse.executeScript("window.scrollBy(0,500)");
+    	jse.executeScript("window.scrollTo(0, document.body.scrollHeight);");
     	
     	Thread.sleep(2000);
 
