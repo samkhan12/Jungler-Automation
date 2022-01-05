@@ -75,7 +75,7 @@ public class PageAgentSignUp extends BasePage{
     String mlnerror = "//div[contains(text(),'Enter last name')]";
     String memerror = "//div[contains(text(),'Enter email address')]";
     String welcome3 = "thankyou-heading";
-    
+  //*[@id="root"]/div/div[1]/div/div/div/div/div[2]/div/div/form/div/div[2]/button
     
     //Button xpath  
         
@@ -258,12 +258,17 @@ public class PageAgentSignUp extends BasePage{
          
          
      
-     public void clickbtn2() throws InterruptedException {
+     public void clickbtn2() throws InterruptedException, AWTException {
        
 
+
+    	 Robot robot = new Robot();
+    	 robot.keyPress(KeyEvent.VK_CONTROL);
+    	 robot.keyPress(KeyEvent.VK_END);
+    	 robot.keyRelease(KeyEvent.VK_END);
+    	 robot.keyRelease(KeyEvent.VK_CONTROL);
+         
     	 WebElement number = driver.findElement(By.xpath(btnxpath2));
-         WebDriverWait wait = new WebDriverWait(driver,60);
-         wait.until(ExpectedConditions.visibilityOf(number));
          JavascriptExecutor executor = (JavascriptExecutor) driver; executor.executeScript("arguments[0].click();", number); 
 
       

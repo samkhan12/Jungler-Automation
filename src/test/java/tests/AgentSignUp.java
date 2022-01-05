@@ -370,11 +370,7 @@ public class AgentSignUp extends BaseTest {
          
           Thread.sleep(1000);
           SignUp.selectown();
-          
-          Thread.sleep(1000);
-          driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[1]/div/div/div/div/div[2]")).click();
-          Thread.sleep(2000); 
-      
+              
          
     }
 
@@ -401,13 +397,7 @@ public class AgentSignUp extends BaseTest {
           
           
             Thread.sleep(2000);
-
-            Robot robot = new Robot();
-            robot.keyPress(KeyEvent.VK_PAGE_DOWN);
-            robot.keyRelease(KeyEvent.VK_PAGE_DOWN);
-            
-           
-            
+         
             SignUp.clickbtn2();
       	
 
