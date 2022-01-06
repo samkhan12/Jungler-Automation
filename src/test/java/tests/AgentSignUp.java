@@ -484,6 +484,68 @@ public class AgentSignUp extends BaseTest {
            
          
     }
+    
+    
+    @Test (priority = 15 , description="Verify that agent should able to logout successfully")
+   	public void TC_Negative_Verify_that_Agent_Should_AbleTo_Logout_Successfully() throws InterruptedException, AWTException {
+   		
+   		
+   		  BasicConfigurator.configure();
+   	    
+
+          //ExtentReports Description
+          ExtentTestManager.getTest().setDescription("Verify that agent should able to logout successfully");
+          
+          //*************PAGE INSTANTIATIONS*************
+          AgentSignUpHome homePage = new AgentSignUpHome(driver,wait);
+
+          PageAgentSignUp SignUp = new PageAgentSignUp(driver,wait);
+          
+          //*************PAGE METHODS********************
+          
+          
+          Thread.sleep(1000);
+          
+          SignUp.logout();          
+          //*************ASSERTIONS***********************
+          
+          Thread.sleep(5000);
+          SignUp.verifyLogout();
+           
+         
+    }
+    
+    
+    @Test (priority = 16 , description="Verify that agent should resume to step 2 when only step 1 form is submitted through login")
+   	public void TC_Positive_Verify_that_Agent_Should_AbleTo_ResumeToStep2_WhenOnlyStep1Form_Submitted() throws InterruptedException, AWTException {
+   		
+   		
+   		  BasicConfigurator.configure();
+   	    
+
+          //ExtentReports Description
+          ExtentTestManager.getTest().setDescription("Verify that agent should resume to step 2 when only step 1 form is submitted through login");
+          
+          //*************PAGE INSTANTIATIONS*************
+          AgentSignUpHome homePage = new AgentSignUpHome(driver,wait);
+
+          PageAgentSignUp SignUp = new PageAgentSignUp(driver,wait);
+          
+          //*************PAGE METHODS********************
+          
+          
+          Thread.sleep(1000);
+          
+          SignUp.logout();          
+          //*************ASSERTIONS***********************
+          
+          Thread.sleep(5000);
+          SignUp.verifyLogout();
+           
+         
+    }
+    
+    
 
 
     

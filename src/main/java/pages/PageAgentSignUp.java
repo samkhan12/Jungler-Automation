@@ -77,12 +77,16 @@ public class PageAgentSignUp extends BasePage{
     String memerror = "//div[contains(text(),'Enter email address')]";
     String welcome3 = "thankyou-heading";
     
+    
     //Button xpath  
         
     String btnxpath = "//*[@id=\"gatsby-focus-wrapper\"]/div/div/div[2]/div[2]/div/div/div/button";
     String btnxpath2 = "//*[@id=\"root\"]/div/div[1]/div/div/div/div/div[2]/div/form/div/div[2]/button";
     String upload = "//*[@id=\"root\"]/div/div[1]/div/div/div/div/div[2]/div/form/div/div[2]/div[8]/div/section/div/button";
     String btnxpath3 = "//*[@id=\"root\"]/div/div[1]/div/div/div/div/div[2]/div/div/form/div/div[2]/button";
+    String logout = "//*[@id=\"root\"]/div/div[1]/div/div/div/div/div[1]/div[2]/button";
+    String logout1 = "//*[@id=\"root\"]/div/div[1]/div/div/div/div/div[1]/div[2]/button";
+    String login = "//*[@id=\"gatsby-focus-wrapper\"]/div/div[1]/header/nav/div[2]/ul/li[1]/a";
     
     //*********Page Methods*********  
     
@@ -94,6 +98,12 @@ public class PageAgentSignUp extends BasePage{
         
         }
     
+    public void logout() throws InterruptedException {
+
+    	Thread.sleep(1000);
+        click(By.xpath(logout));    
+        
+        }
     
     public void entervalues(String fn,String ln, String firm) throws InterruptedException {
 
@@ -103,6 +113,75 @@ public class PageAgentSignUp extends BasePage{
         writeText(By.name(firmname),firm);
         
       
+        
+        }
+    
+    public void step2(String fn,String ln, String firm) throws InterruptedException {
+    	
+    	
+    	Thread.sleep(1000);
+        click(By.id(cancelid)); 
+        
+    	Thread.sleep(1000);
+        writeText(By.name(fname),fn);
+        writeText(By.name(lname),ln);
+        writeText(By.name(firmname),firm);
+        
+        WebElement email = driver.findElement(By.name(emailvalue));
+    	email.click();  
+    	Random randomGenerator = new Random();  
+    	int randomInt = randomGenerator.nextInt(1000);
+    	
+    	Random randomGenerator1 = new Random();  
+    	int randomInt1 = randomGenerator1.nextInt(1000);  
+    	email.sendKeys("username"+ randomInt1 + randomInt + "@mailinator.com");	
+    	
+
+	    WebElement number = driver.findElement(By.name(mobile));
+        JavascriptExecutor executor = (JavascriptExecutor) driver; executor.executeScript("arguments[0].click();", number); 
+   
+
+    	String randomNumbers = RandomStringUtils.randomNumeric(8);
+    	String phNo = 83+randomNumbers;
+    	number.sendKeys(phNo);
+    	
+    	Thread.sleep(2000);
+      	WebElement city_dropdown = driver.findElement(By.xpath(selectcity));
+        Select city = new Select(city_dropdown);
+        city.selectByIndex(1);
+          
+    	
+    	Thread.sleep(1000);
+        click(By.xpath(btnxpath));   
+        
+    	Thread.sleep(10000);
+        click(By.xpath(logout1));    
+        
+        String URL = "http://18.232.53.196:3002/";
+        driver.get(URL);
+        
+        Thread.sleep(2000);
+        click(By.xpath(login));
+        
+        driver.switchTo().activeElement();
+        driver.findElement(By.name("email")).sendKeys("username"+ randomInt1 + randomInt + "@mailinator.com");
+        
+        Thread.sleep(2000);
+        click(By.xpath("/html/body/div[4]/div/div[1]/div/div/div/div[2]/div/button"));
+        
+        driver.get("https://www.mailinator.com");
+        WebElement click =  driver.findElement(By.id("search"));
+        click.sendKeys("username"+ randomInt1 + randomInt + "@mailinator.com");
+        driver.findElement(By.xpath("//*[@id=\"site-header\"]/div[1]/div/div/div[1]/div/button")).click();
+        
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//*[contains(text(),'Suburban Jungle Team')]")).click();
+    	
+    	Thread.sleep(5000);
+    	driver.switchTo().frame("html_msg_body");
+    	Thread.sleep(1000);
+    	driver.findElement(By.linkText("here")).click();
+    	
         
         }
     
@@ -213,17 +292,19 @@ public class PageAgentSignUp extends BasePage{
     	    JavascriptExecutor js = (JavascriptExecutor)driver; // Scroll operation using Js Executor
     	    js.executeScript("window.scrollBy(0,250)"); // Scroll Down(+ve) upto browse option
     	    Thread.sleep(2000); // suspending execution for specified time period
-    	     
-    	     WebElement browse = driver.findElement(By.xpath(upload));
-    	     // using linkText, to click on browse element 
-    	    // browse.click(); // Click on browse option on the webpage
-    	    // Thread.sleep(2000); // suspending execution for specified time period
     	 
+    	     WebElement browse = driver.findElement(By.xpath(upload));
+    	     browse.click(); 
+    	     Thread.sleep(2000);
+    	     
+    	 /*  String absoultepath = new File("src\\main\\resources\\sample.jpg").getAbsolutePath();
+    	     browse.sendKeys(absoultepath);
+    	     System.out.println(absoultepath); */
+    	    
     	     Robot rb = new Robot();
     	 
-    	     String image = new File("src\\main\\java\\pages\\sample.jpg").getAbsolutePath();
-    	     Thread.sleep(2000);
-    	     browse.sendKeys(image);
+    	     StringSelection str = new StringSelection("C:\\Users\\khans\\sample.jpg");
+    	     Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
     	 
     	     rb.keyPress(KeyEvent.VK_CONTROL);
     	     rb.keyPress(KeyEvent.VK_V);
@@ -231,6 +312,7 @@ public class PageAgentSignUp extends BasePage{
     	     rb.keyRelease(KeyEvent.VK_CONTROL);
     	     rb.keyRelease(KeyEvent.VK_V);
     	 
+    	    // for pressing and releasing Enter
     	     rb.keyPress(KeyEvent.VK_ENTER);
     	     rb.keyRelease(KeyEvent.VK_ENTER);
     	     
@@ -254,17 +336,12 @@ public class PageAgentSignUp extends BasePage{
          
          
      
-     public void clickbtn2() throws InterruptedException, AWTException {
+     public void clickbtn2() throws InterruptedException {
        
 
-
-    	 Robot robot = new Robot();
-    	 robot.keyPress(KeyEvent.VK_CONTROL);
-    	 robot.keyPress(KeyEvent.VK_END);
-    	 robot.keyRelease(KeyEvent.VK_END);
-    	 robot.keyRelease(KeyEvent.VK_CONTROL);
-         
     	 WebElement number = driver.findElement(By.xpath(btnxpath2));
+         WebDriverWait wait = new WebDriverWait(driver,60);
+         wait.until(ExpectedConditions.visibilityOf(number));
          JavascriptExecutor executor = (JavascriptExecutor) driver; executor.executeScript("arguments[0].click();", number); 
 
       
@@ -387,6 +464,7 @@ public class PageAgentSignUp extends BasePage{
     	String expectedTitle = "Jungler: Staff Login";
     	assertEquals(expectedTitle,actualTitle);
    }
+    
     
     
     public void verifyDashboard() {

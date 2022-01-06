@@ -7,14 +7,13 @@
   </listeners>
   <test thread-count="5" name="LoginTest(failed)">
     <classes>
-      <class name="tests.AgentSignUp">
+      <class name="tests.AgentSignUpFlow">
         <methods>
-          <include name="TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields_Step3"/>
-          <include name="TC_Negative_Verify_that_Agent_Should_SignUp_Successfully_AfterStep3"/>
+          <include name="TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields"/>
           <include name="teardown"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- tests.AgentSignUp -->
+      </class> <!-- tests.AgentSignUpFlow -->
     </classes>
   </test> <!-- LoginTest(failed) -->
 </suite> <!-- Failed suite [N11 Test Suite] -->
