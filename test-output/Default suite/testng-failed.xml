@@ -3,24 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.ClientLogIn">
+      <class name="tests.AgentSignUpFlow">
         <methods>
-          <include name="TC_Positive_Verify_that_Client_ShouldAble_Toget_ErrorMessage_onUsing_InvalidNumber"/>
-          <include name="TC_Positive_Verify_that_Client_ShouldGet_ErrorMessage_inCaseof_Emptyfield"/>
-          <include name="TC_Positive_Verify_that_Client_ShouldAble_Changethe_CountryCode"/>
-          <include name="TC_Positive_Verify_that_Client_ShouldAble_ToLogin_Through_PhoneNumber"/>
-          <include name="TC_Positive_Verify_that_Client_ShouldAble_Toget_ErrorMessage_onUsing_NonRegisteredEmail"/>
-          <include name="TC_Positive_Verify_that_Client_ShouldGet_Error_OnUsingInvalidEmail"/>
+          <include name="TC_Positive_Verify_that_Agent_Should_AbleTo_ResumeToStep3_WhenOnlyStep2Form_Submitted"/>
           <include name="teardown"/>
-          <include name="TC_Positive_Verify_that_Client_ShouldGet_ErrorMessage_inCaseofEmail_Emptyfield"/>
           <include name="setup"/>
-          <include name="TC_Positive_Verify_that_Client_ShouldAble_cancel_LoginOnclick_EmailCancelButton"/>
-          <include name="TC_Positive_Verify_that_Client_ShouldAble_LoginOnclick_LinkSentTo_Email_forVerification"/>
-          <include name="TC_Positive_Verify_that_Client_ShouldAble_cancel_LoginOnclick_CancelButton"/>
-          <include name="TC_Positive_Verify_that_Client_Should_getValidMessage_onUsing_RegisteredEmail"/>
-          <include name="TC_Positive_Verify_that_Client_ShouldAble_ToResend_OTPThrough_PhoneNumber"/>
         </methods>
-      </class> <!-- tests.ClientLogIn -->
+      </class> <!-- tests.AgentSignUpFlow -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

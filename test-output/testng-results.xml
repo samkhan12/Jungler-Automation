@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-01-06T22:49:09 IST" name="N11 Test Suite" finished-at="2022-01-06T22:49:59 IST" duration-ms="49413">
+  <suite started-at="2022-01-07T16:23:50 IST" name="N11 Test Suite" finished-at="2022-01-07T16:26:12 IST" duration-ms="142296">
     <groups>
     </groups>
-    <test started-at="2022-01-06T22:49:09 IST" name="LoginTest" finished-at="2022-01-06T22:49:59 IST" duration-ms="49413">
+    <test started-at="2022-01-07T16:23:50 IST" name="LoginTest" finished-at="2022-01-07T16:26:12 IST" duration-ms="142296">
       <class name="tests.AgentSignUpFlow">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AgentSignUpFlow@35e2d654]" started-at="2022-01-06T22:49:09 IST" name="setup" finished-at="2022-01-06T22:49:13 IST" duration-ms="3131" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AgentSignUpFlow@1bd4fdd]" started-at="2022-01-07T16:23:50 IST" name="setup" finished-at="2022-01-07T16:23:52 IST" duration-ms="2430" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields()[pri:0, instance:tests.AgentSignUpFlow@35e2d654]" started-at="2022-01-06T22:49:13 IST" name="TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields" description="Verify that agent should get validation error in case of empty fields" finished-at="2022-01-06T22:49:59 IST" duration-ms="46176" status="PASS">
+        <test-method signature="TC_Positive_Verify_that_Agent_Should_AbleTo_ResumeToStep3_WhenOnlyStep2Form_Submitted()[pri:0, instance:tests.AgentSignUpFlow@1bd4fdd]" started-at="2022-01-07T16:23:52 IST" name="TC_Positive_Verify_that_Agent_Should_AbleTo_ResumeToStep3_WhenOnlyStep2Form_Submitted" description="Verify that agent should resume to step 3 when only step 2 form is submitted through login" finished-at="2022-01-07T16:26:12 IST" duration-ms="139791" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.AgentSignUpFlow@35e2d654]" started-at="2022-01-06T22:49:59 IST" name="teardown" finished-at="2022-01-06T22:49:59 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- TC_Positive_Verify_that_Agent_Should_AbleTo_ResumeToStep3_WhenOnlyStep2Form_Submitted -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.AgentSignUpFlow@1bd4fdd]" started-at="2022-01-07T16:26:12 IST" name="teardown" finished-at="2022-01-07T16:26:12 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->

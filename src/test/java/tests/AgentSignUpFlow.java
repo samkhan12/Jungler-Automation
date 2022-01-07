@@ -27,15 +27,15 @@ public class AgentSignUpFlow extends BaseTest {
     // 2) We send these driver and wait variables to the page class with below declaration
     // 3) super () method in page class transfer the driver and wait variables values to the BasePage class.
 
-    @Test (priority = 0, description="Verify that agent should get validation error in case of empty fields")
-	public void TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields() throws InterruptedException {
+    @Test (enabled = false, description="Verify that agent should resume to step 2 when only step 1 form is submitted through login")
+	public void TC_Positive_Verify_that_Agent_Should_AbleTo_ResumeToStep2_WhenOnlyStep1Form_Submitted() throws InterruptedException {
 		
 		
 		BasicConfigurator.configure();
 	    
 
         //ExtentReports Description
-        ExtentTestManager.getTest().setDescription("Verify that agent should get validation error in case of empty fields");
+        ExtentTestManager.getTest().setDescription("Verify that agent should resume to step 2 when only step 1 form is submitted through login");
         
         //*************PAGE INSTANTIATIONS*************
         AgentSignUpHome homePage = new AgentSignUpHome(driver,wait);
@@ -47,8 +47,35 @@ public class AgentSignUpFlow extends BaseTest {
         homePage.goToJungler();
         SignUp.step2("Sample", "Account", "sample.com");
 
+        
        
 	 
 	}
+    
+    
+    @Test (priority = 0, description="Verify that agent should resume to step 3 when only step 2 form is submitted through login")
+   	public void TC_Positive_Verify_that_Agent_Should_AbleTo_ResumeToStep3_WhenOnlyStep2Form_Submitted() throws InterruptedException, AWTException {
+   		
+   		
+   		BasicConfigurator.configure();
+   	    
+
+           //ExtentReports Description
+           ExtentTestManager.getTest().setDescription("Verify that agent should resume to step 3 when only step 2 form is submitted through login");
+           
+           //*************PAGE INSTANTIATIONS*************
+           AgentSignUpHome homePage = new AgentSignUpHome(driver,wait);
+    
+           PageAgentSignUp SignUp = new PageAgentSignUp(driver,wait);
+           
+           //*************PAGE METHODS********************
+      
+           homePage.goToJungler();
+           SignUp.step3("Sample", "Account", "sample.com");
+           SignUp.verifyStep3();
+           
+
+}
+    
     
 }
