@@ -53,7 +53,7 @@ public class AgentSignUpFlow extends BaseTest {
 	}
     
     
-    @Test (priority = 0, description="Verify that agent should resume to step 3 when only step 2 form is submitted through login")
+    @Test (enabled = false, description="Verify that agent should resume to step 3 when only step 2 form is submitted through login")
    	public void TC_Positive_Verify_that_Agent_Should_AbleTo_ResumeToStep3_WhenOnlyStep2Form_Submitted() throws InterruptedException, AWTException {
    		
    		
@@ -72,6 +72,31 @@ public class AgentSignUpFlow extends BaseTest {
       
            homePage.goToJungler();
            SignUp.step3("Sample", "Account", "sample.com");
+           SignUp.verifyStep3();
+           
+
+}
+    
+    
+    @Test (priority = 0, description="Verify that agent should resume to step 4 when only step 3 form is submitted through login")
+   	public void TC_Positive_Verify_that_Agent_Should_AbleTo_ResumeToStep4_WhenOnlyStep3Form_Submitted() throws InterruptedException, AWTException {
+   		
+   		
+   		BasicConfigurator.configure();
+   	    
+
+           //ExtentReports Description
+           ExtentTestManager.getTest().setDescription("Verify that agent should resume to step 4 when only step 3 form is submitted through login");
+           
+           //*************PAGE INSTANTIATIONS*************
+           AgentSignUpHome homePage = new AgentSignUpHome(driver,wait);
+    
+           PageAgentSignUp SignUp = new PageAgentSignUp(driver,wait);
+           
+           //*************PAGE METHODS********************
+      
+           homePage.goToJungler();
+           SignUp.step4("Sample", "Account", "sample.com");
            SignUp.verifyStep3();
            
 

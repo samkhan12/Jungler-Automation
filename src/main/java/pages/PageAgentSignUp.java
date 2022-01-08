@@ -89,6 +89,7 @@ public class PageAgentSignUp extends BasePage{
     String logout1 = "//*[@id=\"root\"]/div/div[1]/div/div/div/div/div[1]/div[2]/button";
     String logout2 = "//*[@id=\"root\"]/div/div[1]/div/div/div/div/div[1]/div[2]/button";
     String login = "//*[@id=\"gatsby-focus-wrapper\"]/div/div[1]/header/nav/div[2]/ul/li[1]/a";
+    String logout3 = "//*[@id=\"root\"]/div/div[1]/div/div/div/div/div[1]/div[2]/button";
     
     //*********Page Methods*********  
     
@@ -322,15 +323,170 @@ public class PageAgentSignUp extends BasePage{
          ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
          driver.switchTo().window(tabs.get(1));
 
-    	
-        
+    	        
         }
     
     
+    public void step4(String fn,String ln, String firm) throws InterruptedException, AWTException {
+    	
+    	
+    	Thread.sleep(1000);
+        click(By.id(cancelid)); 
+        
+    	Thread.sleep(1000);
+        writeText(By.name(fname),fn);
+        writeText(By.name(lname),ln);
+        writeText(By.name(firmname),firm);
+        
+        WebElement email = driver.findElement(By.name(emailvalue));
+    	email.click();  
+    	Random randomGenerator = new Random();  
+    	int randomInt = randomGenerator.nextInt(1000);
+    	
+    	Random randomGenerator1 = new Random();  
+    	int randomInt1 = randomGenerator1.nextInt(1000);  
+    	email.sendKeys("username"+ randomInt1 + randomInt + "@mailinator.com");	
+    	
+
+	    WebElement number = driver.findElement(By.name(mobile));
+        JavascriptExecutor executor = (JavascriptExecutor) driver; executor.executeScript("arguments[0].click();", number); 
+   
+
+    	String randomNumbers = RandomStringUtils.randomNumeric(8);
+    	String phNo = 83+randomNumbers;
+    	number.sendKeys(phNo);
+    	
+    	Thread.sleep(2000);
+      	WebElement city_dropdown = driver.findElement(By.xpath(selectcity));
+        Select city = new Select(city_dropdown);
+        city.selectByIndex(1);
+          
+    	
+    	Thread.sleep(1000);
+        click(By.xpath(btnxpath));
+        
+        
+        Thread.sleep(5000);
+        driver.findElement(By.name(city2)).sendKeys("San Francisco");
+        driver.findElement(By.name(buysales)).sendKeys("100");
+        driver.findElement(By.name(business)).sendKeys("sample.com");
+        driver.findElement(By.name(zilli)).sendKeys("zillow.com");
+        driver.findElement(By.name(bio2)).sendKeys("Test Agent Flow");
+
+       /*
+        writeText(By.name(city2),"San Francisco");
+        writeText(By.name(buysales),"100");
+        writeText(By.name(business),"sample.com");
+        writeText(By.name(zilli),"zillow.com");
+        writeText(By.name(bio2),"Test Agent Flow");
+       */
+        
+    	WebElement year_dropdown = driver.findElement(By.name(year));
+        Select budget = new Select(year_dropdown);
+        budget.selectByIndex(1);
+        
+        
+        Thread.sleep(2000);
+    	driver.findElement(By.xpath(town2)).click();
+    	
+    	
+    	Thread.sleep(2000);
+    	WebElement check = driver.findElement(By.xpath(checkbox));
+        JavascriptExecutor executor2 = (JavascriptExecutor) driver; executor2.executeScript("arguments[0].click();", check); 
+ 
+        Thread.sleep(5000);
+        WebElement check1 = driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[1]/div/div/div/div/div[2]/div/form/div/div[2]/div[3]/div/div/button"));
+        JavascriptExecutor executor3 = (JavascriptExecutor) driver; executor3.executeScript("arguments[0].click();", check1); 
+ 
+        
+        JavascriptExecutor js = (JavascriptExecutor)driver; 
+	    js.executeScript("window.scrollBy(0,250)"); 
+	    Thread.sleep(2000); 
+	 
+	     WebElement browse = driver.findElement(By.xpath(upload));
+	     browse.click(); 
+	     Thread.sleep(2000);
+	    
+	     Robot rb = new Robot();
+	 
+	     StringSelection str = new StringSelection("C:\\Users\\khans\\sample.jpg");
+	     Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
+	 
+	     rb.keyPress(KeyEvent.VK_CONTROL);
+	     rb.keyPress(KeyEvent.VK_V);
+	 
+	     rb.keyRelease(KeyEvent.VK_CONTROL);
+	     rb.keyRelease(KeyEvent.VK_V);
+	 
+	    // for pressing and releasing Enter
+	     rb.keyPress(KeyEvent.VK_ENTER);
+	     rb.keyRelease(KeyEvent.VK_ENTER);
+	     
+	     Thread.sleep(5000);
+	     WebElement number1 = driver.findElement(By.xpath(btnxpath2));
+         WebDriverWait wait = new WebDriverWait(driver,60);
+         wait.until(ExpectedConditions.visibilityOf(number1));
+         JavascriptExecutor executor4 = (JavascriptExecutor) driver; executor4.executeScript("arguments[0].click();", number1);
+         
+         
+     	Thread.sleep(5000);
+        writeText(By.name(managerfn),"FirstName");
+        writeText(By.name(managerln),"LastName");
+        
+        
+     	WebElement email1 = driver.findElement(By.name(brokermail));
+     	email1.click();  
+     	Random randomGenerator3 = new Random();  
+     	int randomInt2 = randomGenerator3.nextInt(1000);  
+     	
+
+    	Random randomGenerator2 = new Random();  
+    	int randomInt3 = randomGenerator2.nextInt(1000);  
+    	email1.sendKeys("username"+ randomInt2 + randomInt3 + "@gmail.com");	
+    	
+    	
+       	Thread.sleep(5000);
+      	WebElement check3 = driver.findElement(By.xpath(btnxpath3));
+        JavascriptExecutor executor5 = (JavascriptExecutor) driver; executor5.executeScript("arguments[0].click();", check3);
+        
+        Thread.sleep(1000);
+        click(By.xpath(logout3));    
+
+   	    Thread.sleep(2000);
+        String URL = "http://18.232.53.196:3002/";
+         driver.get(URL);
+        
+         Thread.sleep(2000);
+         click(By.xpath(login));
+        
+         driver.switchTo().activeElement();
+         driver.findElement(By.name("email")).sendKeys("username"+ randomInt1 + randomInt + "@mailinator.com");
+        
+         Thread.sleep(2000);
+         click(By.xpath("/html/body/div[4]/div/div[1]/div/div/div/div[2]/div/button"));
+        
+         driver.get("https://www.mailinator.com");
+         WebElement click =  driver.findElement(By.id("search"));
+         click.sendKeys("username"+ randomInt1 + randomInt + "@mailinator.com");
+         driver.findElement(By.xpath("//*[@id=\"site-header\"]/div[1]/div/div/div[1]/div/button")).click();
+        
+         Thread.sleep(5000);
+         driver.findElement(By.xpath("//*[contains(text(),'Suburban Jungle Team')]")).click();
+    	
+    	 Thread.sleep(5000);
+    	 driver.switchTo().frame("html_msg_body");
+    	 Thread.sleep(1000);
+    	 driver.findElement(By.linkText("here")).click();
+    	 
+         ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
+         driver.switchTo().window(tabs.get(1));
+
+    	        
+        }
     
+     
     
-    
-    
+     
     public void entervalues2(String cit,String sales, String prof, String zil, String biod) throws InterruptedException {
 
     	Thread.sleep(1000);

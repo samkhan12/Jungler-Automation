@@ -9,7 +9,7 @@
     <classes>
       <class name="tests.AgentSignUpFlow">
         <methods>
-          <include name="TC_Positive_Verify_that_Agent_Should_AbleTo_ResumeToStep3_WhenOnlyStep2Form_Submitted"/>
+          <include name="TC_Positive_Verify_that_Agent_Should_AbleTo_ResumeToStep4_WhenOnlyStep3Form_Submitted"/>
           <include name="teardown"/>
           <include name="setup"/>
         </methods>
