@@ -7,13 +7,13 @@
   </listeners>
   <test thread-count="5" name="LoginTest(failed)">
     <classes>
-      <class name="tests.ServerResponseCheck">
+      <class name="tests.AgentSignIn">
         <methods>
-          <include name="TC_Positive_Verify_Server_Response"/>
+          <include name="TC_Negative_Verify_that_Agent_ShouldBeAble_ToCancel_Close_login_Popup"/>
           <include name="teardown"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- tests.ServerResponseCheck -->
+      </class> <!-- tests.AgentSignIn -->
     </classes>
   </test> <!-- LoginTest(failed) -->
 </suite> <!-- Failed suite [N11 Test Suite] -->
