@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.AgentSignUpFlow">
+      <class name="tests.ServerResponseCheck">
         <methods>
-          <include name="TC_Positive_Verify_that_Agent_Should_AbleTo_ResumeToStep3_WhenOnlyStep2Form_Submitted"/>
+          <include name="TC_Positive_Verify_Server_Response"/>
           <include name="teardown"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- tests.AgentSignUpFlow -->
+      </class> <!-- tests.ServerResponseCheck -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

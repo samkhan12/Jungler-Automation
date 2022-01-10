@@ -9,7 +9,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class MultiTab {
+public class ServerResponse {
 	
 static String SJstaging = "https://raventools.com/marketing";
 static String UJstaging = "http://18.232.53.196:3001/";
@@ -32,8 +32,11 @@ static String UJblog = "https://raventools.com/marketing";
 
 	
 	    }
+	    
+	    
 
 	    public static void openNewTab(WebDriver webDriver, String url, int position) throws IOException {
+	    	
 	        ((JavascriptExecutor) webDriver).executeScript("window.open()");
 	        ArrayList<String> tabs = new ArrayList<>(webDriver.getWindowHandles());
 	        System.out.println("Launch URL : " + tabs.size() + " >position: " + position + " >\t" + SJstaging);

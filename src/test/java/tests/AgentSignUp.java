@@ -516,35 +516,85 @@ public class AgentSignUp extends BaseTest {
     }
     
     
-    @Test (priority = 16 , description="Verify that agent should resume to step 2 when only step 1 form is submitted through login")
-   	public void TC_Positive_Verify_that_Agent_Should_AbleTo_ResumeToStep2_WhenOnlyStep1Form_Submitted() throws InterruptedException, AWTException {
+    @Test (priority = 16, description="Verify that agent should resume to step 2 when only step 1 form is submitted through login")
+   	public void TC_Positive_Verify_that_Agent_Should_AbleTo_ResumeToStep2_WhenOnlyStep1Form_Submitted() throws InterruptedException {
    		
    		
-   		  BasicConfigurator.configure();
+   		BasicConfigurator.configure();
    	    
 
-          //ExtentReports Description
-          ExtentTestManager.getTest().setDescription("Verify that agent should resume to step 2 when only step 1 form is submitted through login");
-          
-          //*************PAGE INSTANTIATIONS*************
-          AgentSignUpHome homePage = new AgentSignUpHome(driver,wait);
-
-          PageAgentSignUp SignUp = new PageAgentSignUp(driver,wait);
-          
-          //*************PAGE METHODS********************
-          
-          
-          Thread.sleep(1000);
-          
-          SignUp.logout();          
-          //*************ASSERTIONS***********************
-          
-          Thread.sleep(5000);
-          SignUp.verifyLogout();
+           //ExtentReports Description
+           ExtentTestManager.getTest().setDescription("Verify that agent should resume to step 2 when only step 1 form is submitted through login");
            
-         
-    }
+           //*************PAGE INSTANTIATIONS*************
+           AgentSignUpHome homePage = new AgentSignUpHome(driver,wait);
     
- 
+           PageAgentSignUp SignUp = new PageAgentSignUp(driver,wait);
+           
+           //*************PAGE METHODS********************
+      
+           homePage.goToJungler();
+           SignUp.step2("Sample", "Account", "sample.com");
+           SignUp.verifyStep3();
+
+           
+          
+   	 
+   	}
+       
+       
+       @Test (priority = 17, description="Verify that agent should resume to step 3 when only step 2 form is submitted through login")
+      	public void TC_Positive_Verify_that_Agent_Should_AbleTo_ResumeToStep3_WhenOnlyStep2Form_Submitted() throws InterruptedException, AWTException {
+      		
+      		
+      		BasicConfigurator.configure();
+      	    
+
+              //ExtentReports Description
+              ExtentTestManager.getTest().setDescription("Verify that agent should resume to step 3 when only step 2 form is submitted through login");
+              
+              //*************PAGE INSTANTIATIONS*************
+              AgentSignUpHome homePage = new AgentSignUpHome(driver,wait);
+       
+              PageAgentSignUp SignUp = new PageAgentSignUp(driver,wait);
+              
+              //*************PAGE METHODS********************
+         
+              homePage.goToJungler();
+              SignUp.step3("Sample", "Account", "sample.com");
+              SignUp.verifyStep3();
+              
+
+   }
+       
+       
+       @Test (priority = 18, description="Verify that agent should resume to step 4 when only step 3 form is submitted through login")
+      	public void TC_Positive_Verify_that_Agent_Should_AbleTo_ResumeToStep4_WhenOnlyStep3Form_Submitted() throws InterruptedException, AWTException {
+      		
+      		
+      		BasicConfigurator.configure();
+      	    
+
+              //ExtentReports Description
+              ExtentTestManager.getTest().setDescription("Verify that agent should resume to step 4 when only step 3 form is submitted through login");
+              
+              //*************PAGE INSTANTIATIONS*************
+              AgentSignUpHome homePage = new AgentSignUpHome(driver,wait);
+       
+              PageAgentSignUp SignUp = new PageAgentSignUp(driver,wait);
+              
+              //*************PAGE METHODS********************
+         
+              homePage.goToJungler();
+              SignUp.step4("Sample", "Account", "sample.com");
+              SignUp.verifyStep3();
+              
+              driver.quit();
+              
+
+   }
+       
+       
+    
 }
     

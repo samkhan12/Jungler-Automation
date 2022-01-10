@@ -185,6 +185,9 @@ public class PageAgentSignUp extends BasePage{
     	Thread.sleep(1000);
     	driver.findElement(By.linkText("here")).click();
     	
+        ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
+        driver.switchTo().window(tabs.get(1));
+    	
         
         }
     
@@ -229,7 +232,7 @@ public class PageAgentSignUp extends BasePage{
         click(By.xpath(btnxpath));
         
         
-        Thread.sleep(5000);
+        Thread.sleep(10000);
         driver.findElement(By.name(city2)).sendKeys("San Francisco");
         driver.findElement(By.name(buysales)).sendKeys("100");
         driver.findElement(By.name(business)).sendKeys("sample.com");
@@ -366,7 +369,7 @@ public class PageAgentSignUp extends BasePage{
         click(By.xpath(btnxpath));
         
         
-        Thread.sleep(5000);
+        Thread.sleep(10000);
         driver.findElement(By.name(city2)).sendKeys("San Francisco");
         driver.findElement(By.name(buysales)).sendKeys("100");
         driver.findElement(By.name(business)).sendKeys("sample.com");
