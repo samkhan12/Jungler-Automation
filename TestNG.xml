@@ -7,7 +7,7 @@
     </listeners>
     <test name="LoginTest">
         <classes> 
-                <class name="tests.AgentSignIn"/>                     
+                <class name="tests.ClientSignUp"/>                     
         </classes>
     </test>
 </suite> 
