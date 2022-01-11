@@ -47,6 +47,7 @@ public class PageAgentSignIn extends BasePage{
     String memerror = "//div[contains(text(),'Enter email address')]";
     String welcome3 = "thankyou-heading";
     String errorclass = "error_field";
+    String emailmsg = "//p[text()='Please check your inbox and click on the link to sign in']";
     
     
     //Button xpath  
@@ -100,17 +101,57 @@ public class PageAgentSignIn extends BasePage{
     }
     
     
+    public void emailLinkVerification() throws InterruptedException {
+    	
+        String url = "https://www.mailinator.com/v4/public/inboxes.jsp?to=testagent";
+        
+        	  {
+        		    
+        	    	driver.get(url);
+        	    	
+        	    	Thread.sleep(2000);
+        	    	driver.findElement(By.xpath("//*[contains(text(),'Suburban Jungle Team')]")).click();
+        	    	
+        	    	Thread.sleep(5000);
+        	    	driver.switchTo().frame("html_msg_body");
+        	    	Thread.sleep(1000);
+        	    	driver.findElement(By.linkText("here")).click();
+        	    	
+        	        ArrayList<String> tabs = new ArrayList<String> (driver.getWindowHandles());
+        	        driver.switchTo().window(tabs.get(1));
+
+        	    	
+        	    	
+        	}
+            
+    }
+    
     public void verifyCancel() {
     	
     	String actualTitle = driver.getTitle();
     	String expectedTitle = "Suburban Jungle | Agent";
     	assertEquals(expectedTitle,actualTitle);
    }
+    
+    
+    public void verifyAgentDashboard() {
+    	
+    	String actualTitle = driver.getTitle();
+    	String expectedTitle = "Dashboard | Jungler";
+    	assertEquals(expectedTitle,actualTitle);
+   }
+
 
 
     
 	public void VerifyError(String expectedText) {
         Assert.assertEquals(readText(By.className(errorclass)), expectedText);
+        
+}
+	
+	
+	public void VerifySentEmail(String expectedText) {
+        Assert.assertEquals(readText(By.xpath(emailmsg)), expectedText);
         
 }
 }

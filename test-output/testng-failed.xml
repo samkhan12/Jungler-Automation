@@ -9,7 +9,7 @@
     <classes>
       <class name="tests.AgentSignIn">
         <methods>
-          <include name="TC_Negative_Verify_that_Agent_ShouldBeAble_ToCancel_Close_login_Popup"/>
+          <include name="TC_Positive_Verify_that_Agent_ShouldBeAble_ToLoginThrough_VerificationLinkSent_OnRegisteredEmail"/>
           <include name="teardown"/>
           <include name="setup"/>
         </methods>
