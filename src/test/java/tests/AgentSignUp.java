@@ -298,7 +298,7 @@ public class AgentSignUp extends BaseTest {
          
     }
     
-    
+/*    
     @Test (enabled = false , description="Verify that agent should be able to upload valid image successfully")
    	public void TC_Negative_Verify_that_Agent_ShouldbeAble_ToUpload_ValidImageSuccessfully() throws InterruptedException, AWTException {
    		
@@ -594,7 +594,7 @@ public class AgentSignUp extends BaseTest {
 
    }
        
-       
+     */  
     
 }
     

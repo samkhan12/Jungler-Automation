@@ -5,18 +5,29 @@ import static org.testng.Assert.assertEquals;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.Toolkit;
+import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.io.File;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Random;
+import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.LocalFileDetector;
+import org.openqa.selenium.remote.RemoteWebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -52,6 +63,7 @@ public class PageAgentSignUp extends BasePage{
     String managerfn = "broker_first_name";
     String managerln = "broker_last_name";
     String brokermail = "broker_email";
+    String imageupload = "//*[@id=\"table-files\"]/tbody/tr[1]/td[5]/a[1]";
     
     
      
@@ -591,22 +603,77 @@ public class PageAgentSignUp extends BasePage{
           
      public void uploadimage() throws InterruptedException, AWTException {
     	 
+
+    	     JavascriptExecutor js = (JavascriptExecutor)driver; // Scroll operation using Js Executor
+    	     js.executeScript("window.scrollBy(0,250)"); // Scroll Down(+ve) upto browse option
+    	     Thread.sleep(2000); // suspending execution for specified time period
     	 
-    	    JavascriptExecutor js = (JavascriptExecutor)driver; // Scroll operation using Js Executor
-    	    js.executeScript("window.scrollBy(0,250)"); // Scroll Down(+ve) upto browse option
-    	    Thread.sleep(2000); // suspending execution for specified time period
-    	 
-    	     WebElement browse = driver.findElement(By.xpath(upload));
-    	     browse.click(); 
+    	     /*WebElement browse = driver.findElement(By.xpath(upload));
     	     Thread.sleep(2000);
-    	     
-    	 /*  String absoultepath = new File("src\\main\\resources\\sample.jpg").getAbsolutePath();
+    	  
+    	     String absoultepath = new File("src//main//resources//sample.jpg").getAbsolutePath();
     	     browse.sendKeys(absoultepath);
-    	     System.out.println(absoultepath); */
-    	    
+    	     System.out.println(absoultepath);*/
+    	     
+         
+          
+         
+    	     driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[1]/div/div/div/div/div[2]/div/form/div/div[2]/div[8]/div/section/div/button")).click();
+
+    	     
+    	     String fileUploadPath = System.getProperty("user.dir") + File.separator
+    	     + "UploadPdfFile" + File.separator;
+
+    	     File file = new File(fileUploadPath);
+    	     File[] files = file.listFiles();
+    	     String name = null;
+    	     {
+    	     for (File f : files) {
+    	     System.out.println(f.getName());
+    	     name = f.getName();
+    	     }
+
+    	     //Copy your file's absolute path to the clipboard
+    	     StringSelection ss = new StringSelection(fileUploadPath + name);
+    	     Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();
+    	     clipboard.setContents(ss, null);
+    	     try {
+    	     	{
+    	     	Robot robot = new Robot();
+    	     	
+    	     	
+    	     	robot.delay(250);
+    	     	robot.keyPress(KeyEvent.VK_ENTER);
+    	     	robot.keyRelease(KeyEvent.VK_ENTER);
+    	     	robot.keyPress(KeyEvent.VK_CONTROL);
+    	     	robot.keyPress(KeyEvent.VK_V);
+    	     	robot.keyRelease(KeyEvent.VK_V);
+    	     	robot.keyRelease(KeyEvent.VK_CONTROL);
+    	     	robot.keyPress(KeyEvent.VK_ENTER);
+    	     	robot.delay(150);
+    	     	robot.keyRelease(KeyEvent.VK_ENTER);
+    	     	
+    	     	
+    	     	
+    	     	}
+    	     } catch (AWTException e) {
+    	     	// TODO Auto-generated catch block
+    	     	e.printStackTrace();
+    	     }}}
+    	     
+    /*	     
+    	     
+    	     WebElement element1 = driver.findElement(By.xpath(upload));
+    	     LocalFileDetector detector = new LocalFileDetector();
+    	     String path1 = new File("src\\main\\resources\\sample.jpg").getAbsolutePath();
+    	     File file = detector.getLocalFile(path1);
+    	     ((RemoteWebElement) element1).setFileDetector(detector);
+    	     element1.sendKeys(file.getAbsolutePath());    	     
+     }
+   		
+   	  	  
     	     Robot rb = new Robot();
-    	 
-    	     StringSelection str = new StringSelection("C:\\Users\\khans\\sample.jpg");
+    	     StringSelection str = new StringSelection("C:\\Users\\khans\\Downloads\\sample.jpg");
     	     Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
     	 
     	     rb.keyPress(KeyEvent.VK_CONTROL);
@@ -621,7 +688,7 @@ public class PageAgentSignUp extends BasePage{
     	     
     	     
     	   }
-    	  
+    	  */
      
      public void verifyimage() throws InterruptedException {
 

@@ -293,6 +293,7 @@ public class AgentSignIn extends BaseTest {
            //*************ASSERTIONS***********************
            
            
+           Thread.sleep(5000);
            SignIn.verifyAgentDashboard();
 
            
