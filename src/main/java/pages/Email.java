@@ -30,7 +30,7 @@ public class Email {
 		props.put("mail.smtp.host", "smtp.gmail.com");
 
 		// set the port of socket factory 
-		props.put("mail.smtp.socketFactory.port", "465");
+		props.put("mail.smtp.socketFactory.port", "456");
 
 		// set socket factory
 		props.put("mail.smtp.socketFactory.class","javax.net.ssl.SSLSocketFactory");
