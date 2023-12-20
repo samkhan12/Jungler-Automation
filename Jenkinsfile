@@ -3,13 +3,13 @@ pipeline {
     stages {
        stage('build') {
           steps {
-             bat 'echo step1'
-             bat 'echo step2'
-             bat '''
+             sh 'echo step1'
+             sh 'echo step2'
+             sh '''
                 echo 'Multiline'
                 echo 'Example'
-             ''
-             echo ''not using shell''
+             '''
+             echo 'not using shell'
           }
        }
     }
