@@ -1,5 +1,5 @@
 # Jungler.Automation
-* ExtentReports 2.41.2 
+* ExtentReports 2.41.2 Method
 * React Site Link: 
 
 * Github Webhook Push Tested
@@ -13,6 +13,8 @@
 **Jungler - Automation is a test driven development framework implemented for functional and regressional scenarios 
 **
 Project set includes 
+
+Automation Framework
 
 Selenium 
 Maven
