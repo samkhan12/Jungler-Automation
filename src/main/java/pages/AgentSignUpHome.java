@@ -15,7 +15,7 @@
 
 	    //*********Page Variables*******
 	    
-	    String baseURL = "http://18.232.53.196:3002/application/";
+	    String baseURL = "http://18.232.53.195/application/";
 
 	    
 	    //*********Page Methods*********

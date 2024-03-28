@@ -11,11 +11,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class ServerResponse {
 	
-static String SJstaging = "https://raventools.com/marketing";
-static String UJstaging = "http://18.232.53.196:3001/";
-static String Agentstaging = "http://18.232.53.196:3002/";
-static String SJblog = "https://suburbanjunglegroup.com/blog/";
-static String UJblog = "https://raventools.com/marketing";
+static String SJstaging = "https://tinyurl.com/app/login";
+static String UJstaging = "https://tinyurl.com/app/login";
+static String Agentstaging = "https://tinyurl.com/app/login";
+static String SJblog = "https://tinyurl.com/app/login";
+static String UJblog = "https://tinyurl.com/app/login";
 
 
 
@@ -95,7 +95,7 @@ static String UJblog = "https://raventools.com/marketing";
                           int v = c5.getResponseCode();
 	                      System.out.println("Http response code of Urban-Blog: " + v);
 	                      
-	                      webDriver.quit();
+	                 //     webDriver.quit();
 
 	            	   
 		      } 

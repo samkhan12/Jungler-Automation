@@ -36,6 +36,7 @@ public class ServerResponseCheck extends BaseTest {
  
         PageServerResponse response = new PageServerResponse(driver,wait);
         response.getClass();
+        driver.quit();
    
         //*************PAGE METHODS********************
    

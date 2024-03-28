@@ -1,7 +1,7 @@
 package tests;
 
 
-import java.awt.AWTException;
+
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
 
@@ -77,10 +77,9 @@ public class AgentSignIn extends BaseTest {
    
           PageAgentSignIn SignIn = new PageAgentSignIn(driver,wait);
           
-          //*************PAGE METHODS********************
+          //*************PAGE METHODS********************//
      
           
-      
           homePage.goToJungler();
           SignIn.clickonlogin();
           SignIn.enteremail("juglermailinator.com");
