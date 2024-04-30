@@ -28,7 +28,8 @@ public class AgentReportFlowTest extends BaseTest {
     // 2) We send these driver and wait variables to the page class with below declaration
     // 3) super () method in page class transfer the driver and wait variables values to the BasePage class.
 
-    @Test (priority = 0, description="Verify that agent should be able to logged in successfully in OrangeScrum")
+    @SuppressWarnings("rawtypes")
+	@Test (priority = 0, description="Verify that agent should be able to logged in successfully in OrangeScrum")
 	public void TC_Positive_Verify_that_Agent_Should_AbletoLogin_OrangeScrum_Successfully() throws InterruptedException {
 		
 		
@@ -45,7 +46,7 @@ public class AgentReportFlowTest extends BaseTest {
         
         //*************PAGE METHODS********************
         baseURL.goToJungler();
-        report.usernameemail("md.salman@jobma.com", "Uber@1235");
+        report.usernameemail("md.salman@jobm.com", "Uber@1235");
         report.clickSubmit();
         report.selectProject();
         report.savedfilter1();

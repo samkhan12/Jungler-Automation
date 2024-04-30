@@ -5,15 +5,15 @@
     <listener class-name="utils.Listeners.TestListener"/>
     <listener class-name="utils.Listeners.AnnotationTransformer"/>
   </listeners>
-  <test thread-count="5" name="ServerResponseCheck-Test(failed)">
+  <test thread-count="5" name="LoginTest(failed)">
     <classes>
-      <class name="tests.ServerResponseCheck">
+      <class name="tests.AgentReportFlowTest">
         <methods>
-          <include name="TC_Positive_Verify_Server_Response"/>
           <include name="teardown"/>
+          <include name="TC_Positive_Verify_that_Agent_Should_AbletoLogin_OrangeScrum_Successfully"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- tests.ServerResponseCheck -->
+      </class> <!-- tests.AgentReportFlowTest -->
     </classes>
-  </test> <!-- ServerResponseCheck-Test(failed) -->
+  </test> <!-- LoginTest(failed) -->
 </suite> <!-- Failed suite [N11 Test Suite] -->
