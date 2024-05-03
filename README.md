@@ -1,5 +1,5 @@
 # Jungler.Automation
-* ExtentReports 2.41.2 Method
+* ExtentReports 2.41.2 Method Updated
 * React Site Link: 
 
 * Github Webhook Push Tested
