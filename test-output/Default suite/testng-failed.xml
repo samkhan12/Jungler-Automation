@@ -3,20 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="tests.AgentSignIn">
+      <class name="tests.AgentReportFlowTest">
         <methods>
-          <include name="TC_Negative_Verify_that_Agent_ShouldBeAble_ToCancel_Close_login_Popup"/>
-          <include name="TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfUsing_SpecialCharacters"/>
-          <include name="TC_Positive_Verify_that_Agent_ShouldBeAble_ToLoginThrough_VerificationLinkSent_OnRegisteredEmail"/>
-          <include name="TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfInvalidEmail"/>
-          <include name="TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyField"/>
-          <include name="TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfMissing_Domain"/>
-          <include name="TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOf_NonExistingEmail"/>
           <include name="teardown"/>
-          <include name="TC_Positive_Verify_that_Agent_ShouldBeAble_ToSent_VerificationLink_OnRegisteredEmail"/>
+          <include name="TC_Positive_Verify_that_Agent_Should_AbletoLogin_OrangeScrum_Successfully"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- tests.AgentSignIn -->
+      </class> <!-- tests.AgentReportFlowTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
