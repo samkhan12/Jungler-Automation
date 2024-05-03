@@ -2,38 +2,38 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-03T16:14:12 IST" name="N11 Test Suite" finished-at="2024-05-03T16:14:26 IST" duration-ms="14756">
+  <suite started-at="2024-05-03T18:07:30 IST" name="N11 Test Suite" finished-at="2024-05-03T18:08:17 IST" duration-ms="46845">
     <groups>
     </groups>
-    <test started-at="2024-05-03T16:14:12 IST" name="LoginTest" finished-at="2024-05-03T16:14:26 IST" duration-ms="14756">
+    <test started-at="2024-05-03T18:07:30 IST" name="LoginTest" finished-at="2024-05-03T18:08:17 IST" duration-ms="46845">
       <class name="tests.AgentReportFlowTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AgentReportFlowTest@510f3d34]" started-at="2024-05-03T16:14:12 IST" name="setup" finished-at="2024-05-03T16:14:15 IST" duration-ms="2957" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:tests.AgentReportFlowTest@510f3d34]" started-at="2024-05-03T18:07:30 IST" name="setup" finished-at="2024-05-03T18:07:33 IST" duration-ms="3120" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TC_Positive_Verify_that_Agent_Should_AbletoLogin_OrangeScrum_Successfully()[pri:0, instance:tests.AgentReportFlowTest@510f3d34]" started-at="2024-05-03T16:14:15 IST" name="TC_Positive_Verify_that_Agent_Should_AbletoLogin_OrangeScrum_Successfully" description="Verify that agent should be able to log in successfully in OrangeScrum" finished-at="2024-05-03T16:14:26 IST" duration-ms="11617" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        <test-method signature="TC_Positive_Verify_that_Agent_Should_AbletoLogin_OrangeScrum_Successfully()[pri:0, instance:tests.AgentReportFlowTest@510f3d34]" started-at="2024-05-03T18:07:33 IST" name="TC_Positive_Verify_that_Agent_Should_AbletoLogin_OrangeScrum_Successfully" description="Verify that agent should be able to log in successfully in OrangeScrum" finished-at="2024-05-03T18:08:16 IST" duration-ms="43384" status="FAIL">
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="side-menu-dynamic-cnt"]/li[7]/a/span"}
+              <![CDATA[element not interactable
   (Session info: chrome=124.0.6367.119)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.16.1', revision: '9b4c83354e'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bc17c413bb7688099fd860268f1c4b1a, findElement {using=xpath, value=//*[@id="side-menu-dynamic-cnt"]/li[7]/a/span}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.93 (c049f9178bc9..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54816}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54816/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bc17c413bb7688099fd860268f1c4b1a]]>
+Command: [b770d2c65e2cb1bc3a2367132fa68713, clickElement {id=f.59BA15807FCB55C3D5BF10B2752746F2.d.853128B5130ED5534D9CD2A9BA9A7033.e.94120}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.93 (c049f9178bc9..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63944}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63944/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b770d2c65e2cb1bc3a2367132fa68713)] -> xpath: //*[@id="frm"]]
+Session ID: b770d2c65e2cb1bc3a2367132fa68713]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="side-menu-dynamic-cnt"]/li[7]/a/span"}
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=124.0.6367.119)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: '4.16.1', revision: '9b4c83354e'
 System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bc17c413bb7688099fd860268f1c4b1a, findElement {using=xpath, value=//*[@id="side-menu-dynamic-cnt"]/li[7]/a/span}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.93 (c049f9178bc9..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54816}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54816/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bc17c413bb7688099fd860268f1c4b1a
+Command: [b770d2c65e2cb1bc3a2367132fa68713, clickElement {id=f.59BA15807FCB55C3D5BF10B2752746F2.d.853128B5130ED5534D9CD2A9BA9A7033.e.94120}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.119, chrome: {chromedriverVersion: 124.0.6367.93 (c049f9178bc9..., userDataDir: C:\Users\User\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63944}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:63944/devtoo..., se:cdpVersion: 124.0.6367.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (b770d2c65e2cb1bc3a2367132fa68713)] -> xpath: //*[@id="frm"]]
+Session ID: b770d2c65e2cb1bc3a2367132fa68713
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -46,13 +46,10 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:523)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:354)
-at pages.BasePage.click(BasePage.java:19)
-at pages.PageReport.selectProject(PageReport.java:81)
-at tests.AgentReportFlowTest.TC_Positive_Verify_that_Agent_Should_AbletoLogin_OrangeScrum_Successfully(AgentReportFlowTest.java:113)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:224)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+at pages.PageReport.selectweektime(PageReport.java:125)
+at tests.AgentReportFlowTest.TC_Positive_Verify_that_Agent_Should_AbletoLogin_OrangeScrum_Successfully(AgentReportFlowTest.java:116)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -83,11 +80,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_Positive_Verify_that_Agent_Should_AbletoLogin_OrangeScrum_Successfully -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.AgentReportFlowTest@510f3d34]" started-at="2024-05-03T16:14:26 IST" name="teardown" finished-at="2024-05-03T16:14:26 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:tests.AgentReportFlowTest@510f3d34]" started-at="2024-05-03T18:08:17 IST" name="teardown" finished-at="2024-05-03T18:08:17 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
