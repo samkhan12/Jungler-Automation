@@ -22,8 +22,8 @@ public class BaseTest {
         //Create a Chrome driver. All test classes use this.
 
         ChromeOptions chromeOptions = new ChromeOptions();
-    //    chromeOptions.addArguments("--remote-allow-origins=*");
-        chromeOptions.addArguments("--headless");
+        chromeOptions.addArguments("--remote-allow-origins=*");
+     //   chromeOptions.addArguments("--headless");
         driver = new ChromeDriver(chromeOptions);
         driver.manage().window().maximize();
     }
