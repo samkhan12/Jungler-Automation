@@ -23,6 +23,10 @@ JUnit
 Jenkins
 Java
 HTML
-Exten Report
-Jenkins Server
 JS
+
+
+
+
+
+Functional and Regression Testing
