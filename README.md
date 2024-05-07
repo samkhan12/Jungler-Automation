@@ -23,4 +23,6 @@ JUnit
 Jenkins
 Java
 HTML
+Exten Report
+Jenkins Server
 JS
