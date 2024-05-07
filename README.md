@@ -22,6 +22,8 @@ TestNG
 JUnit
 Jenkins
 Java
+Extent Report
+Java Core
 HTML
 JS
 
