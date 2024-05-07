@@ -24,8 +24,8 @@ Jenkins
 Java
 Extent Report
 Java Core
-HTML
-JS
+HTML Plus
+JavaScript
 
 
 
