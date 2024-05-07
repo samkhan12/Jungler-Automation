@@ -26,8 +26,8 @@ Extent Report
 Java Core
 HTML Plus
 JavaScript
-Git
-Github 
+Git - Github
+Github - Eclipse 
 
 
 
