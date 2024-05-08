@@ -108,7 +108,7 @@ public void TC_Positive_Verify_that_Agent_Should_AbletoLogin_OrangeScrum_Success
     
     //*************PAGE METHODS********************
     baseURL.goToJungler();
-    report.usernameemail("md.salman@jobma.com", "Uber@1235");
+    report.usernameemail("md.salman@jobm.com", "Uber@1235");
     report.clickSubmit();
     report.selectProject();
     report.savedfilter1();
