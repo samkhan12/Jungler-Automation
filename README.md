@@ -11,9 +11,7 @@
 * Installed Automation framework in new Systems
 
 **Jungler - Automation is a test driven development framework implemented for functional and regressional scenarios 
-**
-Project set includes 
-
+**- 
 Automation Framework
 
 Selenium 
@@ -26,6 +24,8 @@ Extent Report
 Java Core
 HTML Plus
 JavaScript
+JS
+Extent Report - JXL
  
 
 
