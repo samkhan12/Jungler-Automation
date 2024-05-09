@@ -9,8 +9,8 @@
     <classes>
       <class name="tests.AgentReportFlowTest">
         <methods>
+          <include name="TC_Negative_Verify_that_Agent_ShouldGet_TheValidationError_InCaseOfEmptyFields"/>
           <include name="teardown"/>
-          <include name="TC_Positive_Verify_that_Agent_Should_AbletoLogin_OrangeScrum_Successfully"/>
           <include name="setup"/>
         </methods>
       </class> <!-- tests.AgentReportFlowTest -->

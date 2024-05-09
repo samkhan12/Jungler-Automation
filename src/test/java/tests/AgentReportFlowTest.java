@@ -70,6 +70,10 @@ import utils.ExtentReports.ExtentTestManager;
 */
 package tests;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.event.KeyEvent;
@@ -92,16 +96,15 @@ import utils.ExtentReports.ExtentTestManager;
 
 public class AgentReportFlowTest extends BaseTest {
 	
-
-@Test(priority = 0, description = "Verify that agent should be able to log in successfully in OrangeScrum")
-public void TC_Positive_Verify_that_Agent_Should_AbletoLogin_OrangeScrum_Successfully() throws InterruptedException {
-    
-    BasicConfigurator.configure();
-    
-    // Start the ExtentTest and set description
-    ExtentTest test = ExtentTestManager.startTest("TC_Positive_Verify_that_Agent_Should_AbletoLogin_OrangeScrum_Successfully", "1");
-    test.getTest().setDescription("TC_Positive_Verify_that_Agent_Should_AbletoLogin_OrangeScrum_Successfully");
- 
+	 @Test (priority = 0, description="Verify that user should not be able to log in successfully with incorrect email")
+		public void TC_Negative_Verify_that_User_Should_Not_Able_To_Login_With_Incorrect_Email() throws InterruptedException 
+		{
+	
+			BasicConfigurator.configure();
+		     
+			//ExtentReports Description
+	        ExtentTestManager.getTest();
+	   
     //*************PAGE INSTANTIATIONS*************
     ReportHome baseURL = new ReportHome(driver, wait);
     PageReport report = new PageReport(driver, wait);
