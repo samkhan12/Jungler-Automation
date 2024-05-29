@@ -25,7 +25,7 @@ Java Core
 HTML Plus
 JavaScript
 JS
-Extent Report - JXL
+Extent Report - Apache
  
 
 
